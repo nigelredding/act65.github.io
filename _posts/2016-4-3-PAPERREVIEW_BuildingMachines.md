@@ -25,15 +25,11 @@ You can find the original paper [here](https://arxiv.org/abs/1604.00289).
 
 This is an interesting statement, as at first I am not sure I entirely agree with it. Obviously CNNs, RNNs and DQNs are capable of learning and yet they are model-free. But, you could also argue that these networks are model of the data. 
 
-So I guess it comes down to our definition of model... what does it mean to model something?
-
-Almost all state-of-the-art neural networks algorithms are model-free. For example, convolutional neural networks for image recognition such as GoogLeNet, DQNs, for games such as AlphaGO, 
-
 ##### Model building
 
 > Connectionist learning algorithms have been shown to learn powerful models, yet their local and incremental nature seems at odds with important aspects of human learning. Many of the most impressive examples of human learning are better characterised as rapid model building than gradual improvements in pattern recognition.
 
-What is the best way to learn a model? To test and experiment? To try to reproduce? What if you have a teacher, how does that help?
+What is a model? What is the best way to learn a model? To test and experiment? To try to reproduce? What if you have a teacher, how does that help?
 
 **Q:** How would **supervised model learning** work?
 
@@ -52,8 +48,6 @@ Steven uses the example of irregular verbs, start - started is regular, as it fo
 The interesting thing about the model-free system is that it is fast (generally a feed-forward process). Parallels can be drawn between this and heuristics that people learn (or our intuitions). 
 
 I think this is the benefit of model-free, feed-forward networks. Like the CNNs and DQNs we see in many applications. They are efficient (kinda) and fast (at acting, not learning). So, we seem to have the ability to act fast and learn slow, but can we do it the other way around? Slow acting and fast learning? Or is that a false dichotomy?
-
-The slower model-based system ???
 
 **Q:** How can model-free learning help teach a model-based system, a type of **self-teaching**? And vice versa.
 
@@ -75,7 +69,7 @@ Pretty much, the more assumptions you can make, the faster you can learn and inf
 
 ##### Physics
 
-> But incorporating a physics-engine-based representation could (it) help DQNs learn to play games ... faster and (in a) more general way?
+> … incorporating a physics-engine-based representation could help DQNs learn to play games ... faster and (in a) more general way?
 
 Are we sure we want to base thought in physics? Intuitively it makes sense, we live in the physical world, and everything we build is, in some sense, physical. But does this apply to machines living in the digital world? I think it requires more thought. 
 
