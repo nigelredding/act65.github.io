@@ -16,14 +16,11 @@ So what is it the designer actually does? And how can we encode this process int
 
 Hyper-parameters. Activation function, structure, ??
 
-The typical process of designing a network is?
+The typical process of designing a network is;
 
 * Analyse data and figure out ???
-* 
+* Test (and then repeat, but avoid the issue that you are using test data as validation data…)
 
-### Designing a net
-
-Lets put researcher out of a job.
 
 
 
@@ -37,5 +34,7 @@ Now, the problems.
 
 Solutions?
 
-* A universal network, or a network witin a network. Where activation functions are made from networks. that is capable of 
+* A universal network, or a network within a network. Where activation functions are made from networks. that is capable of 
 * 
+
+A simpler challenge/toy problem
