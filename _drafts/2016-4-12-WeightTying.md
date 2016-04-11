@@ -3,6 +3,11 @@ layout: post
 title: Weighting and invariance
 ---
 
+What makes a good feature (aka representation?)? (invariant )
+
+> What we really would like is for a particular feature set to be invariant to the irrelevant features and disentangle the relevant features. (Bengio 2014)
+
+> The process of building invariant features can be seen as consisting of two steps. First, low-level features are recovered that account for the data. Second, subsets of these low level features are pooled together to form higher-level invariant features, exemplified by the pooling and subsampling layers of convolutional neural networks. (Bengio 2014)
 
 General principle of learning. The less you have to learn the easier it is…
 

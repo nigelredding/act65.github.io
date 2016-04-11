@@ -1,7 +1,16 @@
 ---
 layout: post
-title: A complex universe
+title: Explaining a complex universe
 ---
+
+Inspired by Beyond infinity by David Deutsh
+
+# Good explanations
+
+What makes a good explanation? Knowing what information is irrelevant and 
+
+# Theory of everything
+
 
 What if I could explain everything, and do it with only a single short explanation. Like a theory of everything.
 
@@ -13,7 +22,7 @@ Or in other words, what if I designed a system to maximise the integrated inform
 
 
 
-### Conceptual compelxity
+### Conceptual complexity
 
 
 

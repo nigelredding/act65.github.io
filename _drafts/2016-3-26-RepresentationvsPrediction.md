@@ -8,6 +8,8 @@ title: Representation (and Prediction) learning
 # Representation learning
 
 
+What is a good representation? (invariant, specific, independent?, ) 
+
 > In representation learning, our goal isn’t to predict observables, but to learn something about the underlying structure. [HIPS blog](https://hips.seas.harvard.edu/blog/)
 
 ??
@@ -58,9 +60,9 @@ I like the idea of having algorithms that can manipulate representations in mean
 
 ### CNNs
 
-What if we consider a CNN as a supervised representation learner? Where the CNN is trying to learn good (invariant and specific) representations of features in the images, so that a softmax layer (maybe with a few fully connected layers) can use these representations to predict an images label.
+What if we consider a CNN as a supervised representation learner? Where the CNN is trying to learn good representations of features in the images, so that a softmax layer (maybe with a few fully connected layers) can use these representations to predict an images label.
 
-Does this representation learning have to be supervised?
+Does this representation learning have to be supervised? (RBMs, pretraining? similar idea??)
 
 So the goal of this representation learning is ??
 
