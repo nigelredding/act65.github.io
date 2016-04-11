@@ -11,14 +11,14 @@ Hey. I am a wana-be smart person.
 
 ### This blog
 
-Yet another blog. I write here to organise my thoughts, to practice explanations and to explore ideas. 
+Yet another blog. I write here to organise my thoughts, to practice explanations and to explore ideas.
 If others happen to learn from these posts awesome!
 
 The topics I will (probably) write about are machine learning and neural networks. Within that I am interested in;
 
 * representation learning
 * unsupervised and hebbian learning
-* analysis of neural networks, why is NN1 better than NN2?
+* analysis of neural networks
 * learning hyper-parameters
 * adapting morphology of neural networks
 * convolution and signals
