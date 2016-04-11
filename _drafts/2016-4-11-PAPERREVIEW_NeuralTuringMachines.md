@@ -1,12 +1,6 @@
 ---
 layout: post
-title: Generalisation versus memory
+title: A summary of Neural turning machines
 ---
+by Alex Graves, Greg Wayne and Ivo Danihekla.
 
-
-Pinker on learning words (a quote would be nice…)
-
-How would this work in a net?
-
-
-Embeddings and ??
