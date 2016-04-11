@@ -11,8 +11,10 @@ Hey. I am a wana-be smart person.
 
 ### This blog
 
-Yet another blog. I write here to organise my thoughts, to practice explanations and to explore ideas.
+Yet another blog. I will write here to organise my thoughts, to practice explanations and to explore ideas.
 If others happen to learn from these posts awesome!
+
+My main interest is exploring how to think, and by extension, how machines should think.
 
 The topics I will (probably) write about are machine learning and neural networks. Within that I am interested in;
 

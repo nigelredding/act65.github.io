@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Machine learning from first principles
+title: Machine intelligence from first principles
 ---
 
 What is;
 
-* intelligence,
 * learning,
 * creativity,
+* problem solving, 
 ???
 
 So what do I think is necessary and sufficient for artificial intelligence?
@@ -15,10 +15,13 @@ So what do I think is necessary and sufficient for artificial intelligence?
 **Necessary**
 
 * You cannot be artificially intelligence without being efficient. 
-* Having model-free representations of ... Aka heuristics, intuition, ... 
-* Having model-based representations of ... 
+
 
 
 **Sufficient**
 
-> Machine learning, aka teaching machines how to think
+
+*****
+
+* Having model-free representations of ... Aka heuristics, intuition, ... 
+* Having model-based representations of ... 
