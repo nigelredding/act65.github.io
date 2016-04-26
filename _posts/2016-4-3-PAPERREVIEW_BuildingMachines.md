@@ -7,9 +7,7 @@ by Brenden Lake, Tomer Ullman, Joshua Tenenbaum and Samuel Gershman.
 
 > In their influential textbook, Russell and Norvig (2003) state that “The quest for ‘artificial flight’ succeeded when the Wright brothers and others stopped imitating birds and started using wind tunnels and learning about aerodynamics.”
 
-So we cautiously draw analogies for how to design thinking machines from human cognition, as it is our best model for intelligence.
-
-Intelligent machines should;
+So we cautiously draw analogies for how to design thinking machines from human cognition, as it is our best model for intelligence. We think intelligent machines should;
 
 * build models of their environments that seek to explain causes, not just predict features.
 * ground learning based in a fundamental understanding of physics (e.g. existence, persistence, ...) and psychology (agency, goals, ...).
@@ -23,7 +21,7 @@ You can find the original paper [here](https://arxiv.org/abs/1604.00289).
 
 > We view learning as a form of model building, or explaining observed data through the construction of causal models of the world.
 
-This is an interesting statement, as at first I am not sure I entirely agree with it. Obviously CNNs, RNNs and DQNs are capable of learning and yet they are model-free. But, you could also argue that these networks are model of the data. 
+This is an interesting statement, as at first I am not sure I entirely agree with it. Obviously CNNs, RNNs and DQNs are capable of learning and yet they are (mostly) model-free. 
 
 ##### Model building
 
@@ -55,7 +53,7 @@ I think the steps forward would be to get a fast learner working and then try to
 
 > One boundary condition on this flexibility is the fact that the skills become “habitized” with routine application, possibly reflecting a shift from model-based to model-free control
 
-So in relation to the irregular verbs before. Initially we would the regular verbs through a model-based process, but then as they become habit, we would learn them through a model-free process. What is nice about this is that: when learning the language initially, the model helps guide us and infer structure.
+So in relation to the irregular verbs before. Initially we would learn the regular verbs through a model-based process, but then as they become habit, we would learn them through a model-free process. What is nice about this is that: when learning the language initially, the model helps guide us and infer structure.
 
 So, how would this work in a neural net? 
 
@@ -65,7 +63,7 @@ So, how would this work in a neural net?
 
 One of the biggest puzzles/problems with this line of thought is that we do not know how much humans are preprogrammed with through their genetics. This is important because we don't know how much children learn from their environment. Or in other words, a slightly deeper question, how much is possible to learn from given information.
 
-Pretty much, the more assumptions you can make, the faster you can learn and infer things. 
+Pretty much, the more assumptions you can make, the faster you can learn and infer things. But, the more you risk being wrong.
 
 ##### Physics
 
@@ -131,7 +129,9 @@ To be clear, they are really talking about a process for learning faster, not le
 
 # Other stuff
 
-##### Goal invariance. How the hell do you learn that?
+##### Goal invariance. 
+
+How the hell do you learn that?
 
 >For example, imagine playing Frostbite with one of these goals:
 Get the lowest possible score. Get closest to 100, or 300, or 1000, or 3000, or any level, without going over. Beat your friend, who’s playing next to you, but just barely, not by too much, so as not to embarrass them. Teach your friend how to play as efficiently as possible.

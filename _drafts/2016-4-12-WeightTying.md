@@ -3,7 +3,7 @@ layout: post
 title: Weighting and invariance
 ---
 
-What makes a good feature (aka representation?)? (invariant )
+What makes a good representation?? (invariant, specific, independent?, ) 
 
 > What we really would like is for a particular feature set to be invariant to the irrelevant features and disentangle the relevant features. (Bengio 2014)
 
@@ -26,11 +26,9 @@ So now the net learns that ?. Too much invariance? The rotations of some things 
 * Image we have learnt invariance to partial occlusion. Half a person is not the same as a whole person?
 
 
-Depends on context...
+The dimensions we want to convolve clearly depends on the feature/context...
 
 > In the context of digit recognition this might mean learning the concept of a ‘0’ with more rotation invariance than a ‘6’, which would incur loss if it had positive weights in the region of symmetry space where a ‘9’ would also fire. (Deep Symmetry Networks)
-
-
 
 
 How can we know which variables our features should be invariant to?
