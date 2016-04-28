@@ -7,7 +7,7 @@ title: Energy efficiency and lazy neurons
 
 
 
-Lazy neurone, finding shorter paths. Aka model-free heuristics.
+Lazy neuron, finding shorter paths. Aka model-free heuristics.
 
 AhAh nodes. Knowm
 
