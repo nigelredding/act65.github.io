@@ -7,24 +7,25 @@ published: true
 
 ### Me
 
-Hey. I am a wana-be smart person.
+Hey, my name is Alex. I am currently studying a post grad diploma in computer science.
+
+The unifying theme across all my interests seems to be, **how to think**. Thus the questions I am interested in are;
+
+* what is thinking? Intelligence, creativity, learning, and consciousness.
+* how do people think? Neuroscience and psychology.
+* how (should) people think? The scientific method, metacognitive strategies and ??
+* how (should) groups of people think? culture engineering, management and facilitation.
+* how to do (good) research? 
+* how (should) computers/structures think/function? Computer architectures, formal languages and artificial intelligence.
+* how to learn? Machine learning and education.
+* anything meta.
+ 
+What is the best way to think?
 
 ### This blog
 
-Yet another blog. I will write here to organise my thoughts, to practice explanations and to explore ideas.
-If others happen to learn from these posts awesome!
+I write here to organise my thoughts, to practice explanations and to explore ideas.  (I think blogging/writing is a powerful method to aid the critical analysis of ideas and would encourage others to do the same.)
 
-My main interest is exploring how to think, and by extension, how machines should think.
+Otherwise, if others happen to learn from these posts awesome!
 
-The topics I will (probably) write about are machine learning and neural networks. Within that I am interested in;
 
-* representation learning
-* unsupervised and hebbian learning
-* analysis of neural networks
-* learning hyper-parameters
-* adapting morphology of neural networks
-* convolution and signals
-* explanations and occams razor
-* learning how to learn and meta cognition 
-
-So pretty much anything related to consciousness, learning and intelligence.
