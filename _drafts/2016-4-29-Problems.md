@@ -5,11 +5,11 @@ title: Problems
 
 > What important problems are you working on? [Richard Hamming](http://www.paulgraham.com/hamming.html)
 
-I would like to answer a slightly different question; what problems do you think are important? (the questions I wish I was working on…)
+I would like to answer a slightly different question; what problems do you think are important? (the problems I wish I was working on…)
 
 Why do I think posing problems is important? 
 
-For each I am to describe the;
+For each I aim to describe the;
 * problem (high level),
 * a metaphorical example,
 * a formal definition,
