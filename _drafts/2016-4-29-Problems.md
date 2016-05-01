@@ -1,18 +1,33 @@
 ---
 layout: post
-title: Problem wishlist
+title: Problems
 ---
 
 > What important problems are you working on? [Richard Hamming](http://www.paulgraham.com/hamming.html)
 
 I would like to answer a slightly different question; what problems do you think are important? (the questions I wish I was working on…)
 
-Continuous learning
+Why do I think posing problems is important? 
 
-Model-based learning
+For each I am to describe the;
+* problem (high level),
+* a metaphorical example,
+* a formal definition,
+* and a suggested benchmark/challenge/toy problem.
 
-Representation learning
+### Continuous learning
 
-Process learning
+This idea is an extension of online learning. The setting is that, not only 
+???
 
-Active learning
+### Model-based learning
+
+### Representation learning
+
+### Process learning
+
+### Coordinated learning (see [this]() post for more details)
+
+### Active learning
+
+
