@@ -24,10 +24,24 @@ This idea is an extension of online learning. The setting is that, not only
 
 ### Representation learning
 
-### Process learning
-
 ### Coordinated learning (see [this]() post for more details)
 
 ### Active learning
+
+# Learning sequences
+### Curriculum learning
+
+Start with the easy things first and build on them. (do they actually get it to compose later ideas from earlier ones?)
+
+### Apprentice learning
+
+Witnessing a series of sub-optimal demonstrations may be enough 
+
+### Process learning
+
+A special case of apprentice learning?
+
+
+
 
 
