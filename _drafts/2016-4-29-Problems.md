@@ -28,6 +28,10 @@ This idea is an extension of online learning. The setting is that, not only
 
 ### Active learning
 
+### Metalearning
+
+Learning to learn
+
 # Learning sequences
 ### Curriculum learning
 
@@ -35,11 +39,13 @@ Start with the easy things first and build on them. (do they actually get it to 
 
 ### Apprentice learning
 
-Witnessing a series of sub-optimal demonstrations may be enough 
+Witnessing a series of (sub-optimal) demonstrations may be enough … (rich examples).
 
 ### Process learning
 
-A special case of apprentice learning?
+A special case of apprentice learning? For sequences?
+What if we had better teachers? Ones that told you where you went wrong.
+What if we tried to predict where we think we went wrong/right?
 
 
 
