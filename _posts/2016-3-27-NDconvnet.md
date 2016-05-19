@@ -3,19 +3,19 @@ layout: post
 title: The N-D conv net
 ---
 
-Following on from my previous post on convolving over rotations (in the z axis), I want to expand on the idea of adding other dimensions to convolve.
+Following on from my previous post on convolving over rotations, I want to expand on the idea of adding other dimensions to convolve.
 
 # Feature invariance in new dimensions
 
 The motivation for this is; if we can make our features invariant to more irrelevant variables then we can learn faster, or from less data (as there are less parameters). 
 
-A face is still a face, regardless of its size, position, rotation, position, colour, if half of it is occluded, 
+E.g. A face is still a face, regardless of its size, position, rotation, position, colour, if half of it is occluded.
 
 ### Position (x,y)
 
 It is common practice to convolve over the two spatial dimensions of an image. The motivation being that the location of a feature in an image (e.g. face) does not effect whether or not it is that feature. 
 
-A car is still a car if it is shyly in the bottom corner of the image and if it is proudly in the middle.
+A car is still a car if it is in the bottom corner of the image or in the middle.
 
 ### Rotation (z)
 
@@ -35,7 +35,7 @@ Scale invariance would be a nice feature of a conv net.
 So to make a feature of a different scale we would need to interpolate or remove weights from our kernels. Given the current architecture of conv net this could get quite messy. Especially if we are also convolving over multiple other dimensions.
 
 An algorithm to do this could be: 
-Take kernel, K, of size 3x3 and map it onto a 6x6 weight space. Use the values of K and interpolate between them to fill in the new, larger kernel. 
+Take kernel, K, of size 3x3 and map it onto a 6x6 weight space. Use the values of K and interpolate between them to fill in the new, larger kernel.
 
 
 ### Occlusion
@@ -69,7 +69,7 @@ Which approach is better?
 
 N-D conv would test every possible orientation of a feature, whereas vanilla CNNs learn only orientations of features that are relevant. So although a vanilla CNN may have to learn the same feature multipule different times in slightly different orientations, it doesnt have to learn every orientation of a feature. Thus saving computations on the forward pass of an image.
 
-But, having more convolutions would mean we would need less parameters, as each kernerl represents more features. Thus less space would be required and we could train the net faster. 
+But, having more convolutions would mean we would need less parameters, as each kernerl represents more features. Thus less space would be required and we could train the net faster. But maybe not faster.
 
 # Issues, questions and thoughts
 
