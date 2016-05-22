@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Review of Building Machines That Learn and Think Like People 
+title: Building Machines That Learn and Think Like People 
+subtitle: A review
 ---
 by Brenden Lake, Tomer Ullman, Joshua Tenenbaum and Samuel Gershman.
 

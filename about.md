@@ -29,4 +29,9 @@ I write here to organise my thoughts, to practice explanations and to explore id
 
 PS. I think blogging/writing is a good way to critically analyse ideas, and to explore your own thoughts. In fact I encourage others to do the same, rather than waste time here…
 
-
+Ratings
+* 1 - Don’t waste your time. A mess of thoughts. Either trivial or erroneous.
+* 2 - Surely you have better things to do? 
+* 3 - There might be a couple of good points in here, but I don’t garantee anything.
+* 4 - 
+* 5
