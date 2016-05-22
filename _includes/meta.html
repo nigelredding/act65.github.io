@@ -21,3 +21,8 @@
     <meta property="og:subtitle" content="{{ page.subtitle }}" />
     <meta property="twitter:subtitle" content="{{ page.subtitle }}" />
     {% endif %}
+
+    {% if page.rating %}
+    <meta property="og:rating" content="{{ page.rating }}" />
+    <meta property="twitter:rating" content="{{ page.rating }}" />
+    {% endif %}
