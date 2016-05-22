@@ -24,6 +24,9 @@ The typical process of designing a network is;
 
 
 
+Ideally? None, it would figure it out for itself.
+
+
 
 We need a way for networks to choose their own activation function, to design their own structure, to ...
 

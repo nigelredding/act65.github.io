@@ -11,9 +11,11 @@ Definitions;
 * clustering. (clustering what?)
 * 
 
+
+
 # Why bother?
 
-
+> Every second the world is telling you how it works. You just need to listen.
 
 # Strategies for unsupervised learning
 
