@@ -1,6 +1,9 @@
 ---
 layout: post
 title: The N-D conv net
+subtitle: Computational trade-off for more convolutions, but faster learning?
+rating: 2
+author: Alex
 ---
 
 Following on from my previous post on convolving over rotations, I want to expand on the idea of adding other dimensions to convolve.
@@ -67,9 +70,9 @@ Fundamentally, there is a trade off between the computations required for each c
 
 Which approach is better?  
 
-N-D conv would test every possible orientation of a feature, whereas vanilla CNNs learn only orientations of features that are relevant. So although a vanilla CNN may have to learn the same feature multipule different times in slightly different orientations, it doesnt have to learn every orientation of a feature. Thus saving computations on the forward pass of an image.
+N-D conv would test every possible orientation of a feature, whereas vanilla CNNs learn only orientations of features that are relevant. So although a vanilla CNN may have to learn the same feature multiple different times in slightly different orientations, it doesn’t have to learn every orientation of a feature. Thus saving computations on the forward pass of an image.
 
-But, having more convolutions would mean we would need less parameters, as each kernerl represents more features. Thus less space would be required and we could train the net faster. But maybe not faster.
+But, having more convolutions would mean we would need less parameters, as each kernel represents more features. Thus less space would be required and we could train the net faster. But maybe not faster.
 
 # Issues, questions and thoughts
 
