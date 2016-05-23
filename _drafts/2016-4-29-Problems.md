@@ -9,14 +9,17 @@ subtitle: Big questions, bigger problems
 I would like to answer a slightly different question; what problems do you think are important? (the problems I wish I was working on…)
 
 Why do I think posing problems is important? 
+What is a problem in this context?
 
-
-…
-
-Deepest problems?
+Deepest problems? (with NNs)
 * Catastrophic interference
 * Exploding/vanishing gradients
 * Learning to augment NN topology
+* Disentangled representations
+
+Setting problems
+* Partial observations
+* Bandits (independent reward/feedback-action pairs)
 * 
 
 
@@ -38,5 +41,7 @@ Related to;
 RNNs and RL
 
 
-New problems?
+# New problems?
 
+* Learning how to think (see []()) rather than what to think.
+* 

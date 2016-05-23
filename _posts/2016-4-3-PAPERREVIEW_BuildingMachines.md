@@ -3,6 +3,7 @@ layout: post
 title: Building Machines That Learn and Think Like People 
 subtitle: by Brenden Lake, Tomer Ullman, Joshua Tenenbaum and Samuel Gershman.
 rating: 3
+author: Alex
 ---
 
 

@@ -22,6 +22,8 @@ Distributed consciousness? Goal driven? Attention/priorities?
 Popular ideas - Her, Ex Machina, …
 Models of the brain - Blue brain projects …
 
+Conscious, emotions, 
+
 ## Scientist-like
 
 Seeks to find an accurate model of the world.
@@ -44,3 +46,9 @@ Thermostat? Self-driving cars …
 	* 
 * Compression
 * Make people happy (… lame)
+
+
+
+
+Related to problem types?
+> Machine Learning has four common classes of applications: classification, predicting next value, anomaly detection, and discovering structure. [](https://iwringer.wordpress.com/2015/11/17/anomaly-detection-concepts-and-techniques/)

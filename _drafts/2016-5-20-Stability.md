@@ -3,8 +3,15 @@ layout: post
 title: Stability and uncertainty
 ---
 
-Stability is certainty, uncertainty is instability
+Define stability.
+* Stability is certainty, uncertainty is instability
 [Off the convex path](http://www.offconvex.org/2016/03/14/stability/)
+* How close you are to a decision boundary?
+* …?
+
+> An algorithm is stable, intuitively speaking, if its output doesn’t change much if we perturb the input sample in a single point. [Moritz Hardt](http://www.offconvex.org/2016/03/14/stability/)
+
+
 
 
 ### Dropout to approximate stability
