@@ -3,16 +3,23 @@ layout: post
 title: Representation (and Prediction) learning
 ---
 
-> I think real division in machine learning isn’t between supervised and unsupervised, but what I’ll term predictive learning and representation learning. [Roger Grosse - HIPS blog](https://hips.seas.harvard.edu/blog/)
+> I think real division in machine learning isn’t between supervised and unsupervised, but what I’ll term predictive learning and representation learning. [Roger Grosse - HIPS blog](https://hips.seas.harvard.edu/blog/2013/02/04/predictive-learning-vs-representation-learning/)
 
 # Representation learning
 
+What is a good representation?
 
-What is a good representation? (invariant, specific, independent?, ) 
+> What we really would like is for a particular feature set to be invariant to the irrelevant features and disentangle the relevant features. (Bengio ??)
+
+
 
 > In representation learning, our goal isn’t to predict observables, but to learn something about the underlying structure. [HIPS blog](https://hips.seas.harvard.edu/blog/)
 
-??
+
+The role of sparsity in disentangled representations?
+[William Whitney]()
+
+
 
 
 > So, why representation is important? The short answer is that “good” representation makes life so much easier, presumably, by reducing the computational burden of doing inference/classification/prediction. [HIPS blog](https://hips.seas.harvard.edu/blog/)

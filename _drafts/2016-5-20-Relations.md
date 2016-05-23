@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Relations
+title: RelationsandLinks
 subtitle: Things we (think we) know but can’t/haven’t proved (yet).
 ---
 
@@ -12,4 +12,4 @@ subtitle: Things we (think we) know but can’t/haven’t proved (yet).
 
 * Can we formulate these relations? 
 * Can we prove when (or not) it is true? Or for which cases.
-* 
+* What bounds can we …
