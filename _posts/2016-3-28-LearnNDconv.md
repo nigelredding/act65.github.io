@@ -3,7 +3,7 @@ layout: post
 title: Prediction the value of a convolution
 subtitle: When and which convolutions should be preformed? And can we make a net that learns to do a convolution?
 rating: 2
-author: Alex
+author:
 ---
 
 Following on from the posts exploring more dimensions to convolve in CNNs. I wonder if it is reasonable to use a net to learn to select which dimensions should be convolved.

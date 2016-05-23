@@ -3,7 +3,7 @@ layout: post
 title: The N-D conv net
 subtitle: Computational trade-off for more convolutions, but faster learning?
 rating: 2
-author: Alex
+author:
 ---
 
 Following on from my previous post on convolving over rotations, I want to expand on the idea of adding other dimensions to convolve.

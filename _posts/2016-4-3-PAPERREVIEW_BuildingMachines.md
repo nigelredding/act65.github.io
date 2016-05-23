@@ -3,7 +3,7 @@ layout: post
 title: Building Machines That Learn and Think Like People 
 subtitle: A quick review. Notes of my ideas related to the papers, not aimed at explaining it.
 rating: 3
-author: Alex
+author:
 ---
 
 > In their influential textbook, Russell and Norvig (2003) state that “The quest for ‘artificial flight’ succeeded when the Wright brothers and others stopped imitating birds and started using wind tunnels and learning about aerodynamics.”

@@ -3,7 +3,7 @@ layout: post
 title: Rotating convolutions
 subtitle: Composing group permutations is a closed operation
 rating: 2
-author: Alex
+author:
 ---
 
 Given a typical 3x3 matrix of weights, also known as a kernel, we can rotate/flip it in 8 different ways. So for each rotation of our matrix we can convolve it with the image thus creating rotational invariance.
