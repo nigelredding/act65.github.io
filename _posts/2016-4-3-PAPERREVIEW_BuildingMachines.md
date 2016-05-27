@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building Machines That Learn and Think Like People 
-subtitle: A quick review. Notes of my ideas related to the papers, not aimed at explaining it.
+subtitle: A quick review. Notes of my ideas related to the paper, not aimed at explaining it.
 rating: 3
 author:
 ---

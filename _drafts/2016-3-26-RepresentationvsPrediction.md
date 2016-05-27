@@ -9,7 +9,7 @@ title: Representation (and Prediction) learning
 
 What is a good representation?
 
-> What we really would like is for a particular feature set to be invariant to the irrelevant features and disentangle the relevant features. (Bengio ??)
+> What we really would like is for a particular feature set to be invariant to the irrelevant features and disentangle the relevant features. (Bengio)
 
 
 
@@ -48,11 +48,7 @@ So, if predictive learning is commonly supervised (regression and classification
 
 ### Supervised representation learning
 
-Given that we want (Italy) + (Capital) = (Rome), or (royal) + (daughter) = (princess), ...
-
-Word2vec already manages to capture some of these relations. But would a supervised model be better?
-
-In my opinion, we do this a lot. The 'supervision' that these nets get is more at a meta level where the researchers designing the learner supervise the sorts of relation they think is important
+Oh, that’s just a CNN…
 
 ##### Unsupervised predictive learning
 

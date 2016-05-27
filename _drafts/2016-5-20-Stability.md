@@ -17,6 +17,7 @@ Define stability.
 ### Dropout to approximate stability
 
 The general idea is to perturb a system and see how it changes.
+But not just dropout, drop connect, swap net, … any stochastic perturbation of the net?
 
 [](http://mlg.eng.cam.ac.uk/yarin/blog_3d801aa532c1ce.html)
 [](http://arxiv.org/abs/1512.05287)
