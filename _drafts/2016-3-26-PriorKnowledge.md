@@ -30,7 +30,7 @@ Ideally? Input from people: none, it would figure it out for itself.
 But the search is too great.(?) No-free-lunch theorem. But then how can we explain our thought process? What limits are there, given the no-free-lunch theorem
 
 
-IWe need a way for networks to choose their own activation function, to design their own structure, to ...
+Ihe need a way for networks to choose their own activation function, to design their own structure, to ...
 
 
 Now, the problems.
