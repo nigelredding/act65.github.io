@@ -5,11 +5,6 @@ permalink: /about/
 published: true
 ---
 
-### Me
-
-The unifying theme across all my interests seems to be, **how to think**,and **what is the best way to think**? 
-
-
 ### This blog
 
 Just another blog… I write here to organise my thoughts, to practice explanations and to explore ideas. If others happen to learn from these posts awesome!
@@ -17,6 +12,13 @@ Just another blog… I write here to organise my thoughts, to practice explanati
 I think blogging/writing is a good way to analyse ideas, and to explore your own thoughts. In fact I encourage others to do the same, rather than spend time here…
 
 This blog is hosted on github using jekyll so feel free to check it out. Also, it is super easy to create a blog, just fork [this](https://github.com/barryclark/jekyll-now) repository and start writing.
+
+### Me
+
+The unifying theme across all my interests seems to be, **how to think**,and **what is the best way to think**? 
+
+I also keep another [blog](https://act65com.wordpress.com/), which is less technical, more opinionated, and more personal. Feel free to check it out.
+
 
 ### Ratings
 * 1 - Don’t waste your time. A mess of thoughts. Either trivial or erroneous.

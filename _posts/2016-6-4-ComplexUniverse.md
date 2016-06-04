@@ -35,6 +35,6 @@ It struck me that our search for a theory of everything is somewhat similar to a
 
 Given this shorter description, have we then created a universe within a universe? Is our universe reducible? Could it be represented with less?
 
-These questions remind me of the structure, and limits, of a turing machine. Can you get a turing machine to simulate itself? And when applied to our setting, is our universe is a computation? To see whether it can be represented in a shorter description? Does this make the end/future of our universe undecidable, like the halting problem? It seems like the notion of a perfectly predictive theory of everything is a contradiction/paradox.
+These questions remind me of the structure, and limits, of a turing machine. Can you get a turing machine to simulate itself? And when applied to our setting, is our universe a computation; to see whether it can be represented in a shorter description? Does this make the end/future of our universe undecidable, like the halting problem? It seems like the notion of a perfectly predictive theory of everything is a contradiction/paradox.
 
 One last question: Is the description of something the same as the thing itself?
