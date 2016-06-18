@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Explaining a complex universe
-subtitle: Definitely more questions than answers… 
-rating: 3
-author: Alex
 ---
 
-What makes a good explanation? And what would happen if we could explain the universe in a theory of everything?
+And what would happen if we could explain the universe in a theory of everything?
 
 Inspired by [The beginning of infinity](https://www.goodreads.com/book/show/10483171-the-beginning-of-infinity?from_search=true&search_version=service) by David Deutsch.
 
