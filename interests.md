@@ -2,7 +2,7 @@
 layout: page
 title: Research interests
 permalink: /interests/
-published: False
+published: True
 ---
 
 The current questions that interest me. I hope that this page to be relatively dynamic over time.
