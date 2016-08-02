@@ -3,6 +3,8 @@ layout: post
 title: Teaching machines how to think
 ---
 
+How should a student learn? And how should a teacher teach?
+
 (insert some snappy name)
 
 Supervised learning. Do as I tell you. Copy me. Is this really how we should be training (and/or thinking) about learning?

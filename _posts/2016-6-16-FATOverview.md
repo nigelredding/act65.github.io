@@ -8,6 +8,8 @@ A quick overview of what is going on at [this](https://github.com/act65/FAT) rep
 # Functional linear algebra
 
 So (I think we would agree) that matrix multiplication looks something like this.
+
+
 $$
 \begin{bmatrix}
 a & b\\

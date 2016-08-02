@@ -6,3 +6,7 @@ rating: 4
 author: Alex
 ---
 
+* For thinking about multiple agents, and collective loss functions.
+* For composing non-linear functions and dealing with non-linear structure.
+* For propagating uncertainty.
+* 
