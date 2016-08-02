@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Research interests
+title: Interests
 permalink: /interests/
 published: True
 ---
