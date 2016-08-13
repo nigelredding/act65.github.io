@@ -12,10 +12,11 @@ The posts will probably be anything related to cognition, computers and math. I 
 * thinking about thinking,
 * learning to learn,
 * thinking and learning,
+* languages for describing languages,
+* languages,
 * science on science,
 * science,
-* solving problem-solving,
-* thinking about which problems are important and why,
-* designing new ways of thinking (languages) about __ and about this list.
+* solving problem-solving, and problem-solving problems,
+* thinking about which problems are important and why.
 
 and all the other meta things I wish I were better at.
