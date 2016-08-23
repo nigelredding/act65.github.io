@@ -5,68 +5,85 @@ permalink: /interests/
 published: true
 ---
 
-`Still under construction`
+# Structures
 
-If I had to sum up my interests in a sentence it would be something like:
+> How can we design structures that function how we want them to? Why do certain structures work so well?
 
-> What is the best way to think? 
+How does structure effect function? (To be honest I am not quite learn what I mean by this question, but that is half the effort) 
+What is the best way to think about some thing? Generally, using some language that reflects the true structure. Some languages are better than others, why?
 
-Where _'best'_ means, most efficient, most effective, ... ? and where _'think'_ is a synonym for compute, ...?
+Aka patterns?
 
-# Languages: structure and function
+### Languages
 
-How does
-I want a way to be able to look at the rules/syntax/... of some structure and to be able to tell you what it will do, how it will function. (???) 
-What is the best way to think about some thing? Generally, using some language that reflects the true structure. 
+> 
 
-* Why are tensors such an effective language for thinking about structure in systems? What would a non-linear and differentiable language for structure look like? What language would allow me to differentiably learn a convolution?
+* Why is linear algebra such an effective language for thinking about and implementing structure in systems? What would a non-linear and differentiable language for structure look like? What language would allow me to differentiably learn, say, a convolution? What alternatives are there to representing information that rival linear algebra?
 * What is the right language for describing systems of loss functions, optimisers and agents? How should they be composed and decomposed?
-* [Tensorflow](https://www.tensorflow.org/), [Edward](http://edwardlib.org/), ... This is what AI will look like for the foreseeable future, better tools, manifesting as programs and programming languages. What makes these languages effective and useful? The small wins of incremental improvements in efficiency (by adding more biases, speciality and heuristics)?
-* Graphical models (of computation) where gradients and/or uncertainty can flow along edges and between nodes. (loss functions propagated between optimisers?)
-* (Programming) Languages. Lambda calculus, ...??? Functional programming ??? Compliers and ???
+* [Tensorflow](https://www.tensorflow.org/), [Edward](http://edwardlib.org/), ... This is what AI will look like for the foreseeable future, better tools, manifesting as programs and programming languages. What makes these languages effective and useful?
+* Graphical models (of computation) where gradients and/or uncertainty (and maybe even loss) can flow along edges and between nodes. Propagation (communication) of information through networks.
+* (Programming) Languages. Lambda calculus, ...??? Functional programming ??? Compliers and ??? Declarative.
 * What does the english language reflect about how we think, and how does the english language effect the way we think? Why is english such a successful language for communication, reason and ___ ? 
 * Why should we build some languages based on set theory and others on type theory?
-* Compilers.
+* What is optimal language syntax? Meta languages. CFG, or ...? H
+* Recursion.
 
-# Physics, optimisation and computers
+### Architectures
 
-Given that we live in a universe governed by physics. How does that determine the things that are possible, and what are the limits?
-What questions can we answer? 
+> How does the architecture of an algorithm, computer, ?, 
 
 * Computer architectures. Von Neumann, neuromorphic, photonic, micro-fluid, biological, 
-* Variational calculus and optimisation. Connections to dynamical systems.
-* Does $P = NP$? This is one of my favourite questions as it is really asking deep physics questions. What is possible given the physics of our universe?  Will our problems always be hard to solve/learn?
-* Foundations. Godel's incompleteness, turing's halting, ???, EWA
-* Computer architectures, ... Neuromorphic engineering. 
-* Physically inspired algoriths. Learning as diffusion.[]()
-* Quantum computing.
-* How does this relate to non-convex optimisation?
+* How can quantum computers, (photonic?), biological computers and neuromorphic computers help us achieve ??? Does does their structure reflect ??
+* The links between GPUs, CUDA and linear algebra and NNs.
+* Algorithmic architectures. Neural networks, ?? Why are Resnets, or Fractal nets, or … suited for their task?
 
-##### Efficiency, compression and entropy
+### Physics
+
+> Given that we live in a universe governed by physics (a set of rules), how does that determine the things that are possible, and what are the limits? How does (and should) this influence the way we design our tools?
+
+* The math that describes physics has a nice habit of being incredibly useful elsewhere…
+* Variational calculus and optimisation. 
+* Connections to dynamical systems. Chaos? Emergence?
+* Does $P = NP$? This is one of my favourite questions as it is really asking deep physical questions. What is possible given the physics of our universe?  Will our problems always be hard to solve/learn?
+* Foundations and deeper truths. Godel's incompleteness, turing's halting, ???, EWA
+* Physically inspired algorithms. [Learning as diffusion]()
+* Quantum computing.
+* How fast is it possible to learn something? What are the limits to how much you can learn given that we live in a world governed by physics? Similarly, how fast can you optimise a function?
+
+
+# Efficiency
 
 > Intelligence is the ability to solve problems efficiently
 
-How fast is it possible to learn something? What are the limits to how much you can learn given that we live in a world governed by physics? Similarly, how fast can you optimise a function?
+### Compression and 
+* Active learning. 
+* Low-power learning and spiking, lazy evaluation, ‘just in time’ processing. Outsourcing memory to the environment, and predicting informations availability to save resources.
+* Attention!! Anomaly, salience, novelty, residual errors from generative models, 
+* Compression as intelligence and consciousness. AIT.  Efficiency.  Compressing memories. RNNs as program compressors? Following gradients of __?
+* Intelligence as entropy maximising agents.[The last question]()
 
-Active learning. 
 
-Low-power learning and spiking, lazy evaluation, ‘just in time’ processing. Outsourcing memory to the environment, and predicting informations availability to save resources.
+### Entropy
+* Kolmogorov complexity.
+* Learning is the opposite of (physical) entropy? Certainly structure is.
 
-Attention!! Anomaly, salience, novelty, residual errors from generative models, 
+# Learning
 
-Compression as intelligence and consciousness. AIT.  Efficiency.  Compressing memories. RNNs as program compressors? Following gradients of __?
-
-# Deep learning
+> Learning is ... ??? finding structure ???
 
 * The brain implements specialised optimisers [Integration of DL and neuro... -- Marblestone](https://arxiv.org/abs/1606.03813). How can we learn these specialised systems? How can you learn to learn? [Learning to learn -- Andrychowicz](https://arxiv.org/abs/1606.04474)
 * How can we compose and manage neural networks? What if I want to make a net to make a net? Modular nets. A language .. .? How can neural nets learn to generate other networks? How about learning to manipulate function handles, where the handles are other neural nets?
-* Replace everything with neural networks. Adam, don’t need that, let a NN do it. 
-* A way to understand the function of complex networks. To know how to networks are similar, what they share, how to morph one into the other, what structure one needs to do X function, ...
-* How can we learn good representations? How do we/nns understand things. Invariance and atomic. Universal languages. Semantics and grammar. How can we represent things in a way that allows us to do/understand (applied to people and computers). Disentangled!! Causal.
-* RL?!? Decision making? Gradient estimation.
+* Replace everything with neural networks. Removing hand crafted features for more general ???. Gabor filters, ... . Adam, don’t need that, let a NN do it. Addition, boring, let a NN learn it.
+* A way to understand the function of complex networks. To know how to networks are similar, what they share, how to morph one into the other, what structure one needs to do X function, ... To be able to decompose their structure into working parts.
+* How can we learn good representations? How do we/nns understand things. Invariance and atomic, compositionality. How can we represent things in a way that allows us to do/understand (applied to people and computers). 
+* Disentangled!! 
+* Causal. Learning structural models.
+* RL?!? Decision making? Gradient estimation. Goal invariance.
 * Exploding/vanishing gradients, internal covariance shift, catastrophic interference and continuous learning, curse of dimensionality
+* NNs, how do they work?!?!
+* The big ones; credit assignment, catastrophic interference, invariant and disentangled representations, 
 
-##### Memory and unsupervised learning
+### Memory and unsupervised learning
 
 Memory. How do we decide what to remember? How can we store it efficiently, by picking out patterns, easy retrieval, ...
 
@@ -76,7 +93,7 @@ Unsupervised learning!
 
 Prediction!
 
-##### Teaching
+### Teaching
 
 How can you augment an existing learning system to make is smarter? integrating with existing networks/systems. Transfer learning ... Continuous/on-line learning.
 
@@ -85,12 +102,18 @@ Process learning
 
 Model based learning. Teaching processes. Learning/testing/correcting a part. Causality??
 
+Process learning.
+
 Education.
+
+
+# Complex systems
 
 ### Distributed systems
 
 How can we coordinate multiple learners/agents? 
-What happens if they process things at different speeds, how can we assign credit? Timing, ... causality.  
+What happens if they process things at different speeds, how can we assign credit?Timing, ... causality.  
+Economies
 
 A distributed learning algorithm?!?
 Learning to communicate?
@@ -99,16 +122,24 @@ Can we do as well or better than backprop through time (for training recurrent n
 
 Group management?
 
+Viewing the brain as a system of agents who compete for cognitive resources, barter for information (to remove uncertainty), ???
+
 ### Wetware and all that  
 
-The most complex systems we know of, us. Genetics, epigenetics, synthetic biology, neuroscience.  How are we designed and managed? What biases and heuristics are preprogrammed within us? What is the minimal set of assumptions/heuristics to lead to intelligence?
+The most complex systems we know of, us. Genetics, epigenetics, synthetic biology, neuroscience.  How are we designed and managed? What biases and heuristics are pre-programmed within us? What is the minimal set of assumptions/heuristics to lead to intelligence?
 
 The brain. How does it work!?!?! [Surfing uncertainty -- Andy Clark](https://www.goodreads.com/book/show/25823558-surfing-uncertainty) Is consciousness just an illusion? The result of our brains trying to predict the world, and yet living within the world.
 
-Viewing the brain as a system of agents who compete for cognitive resources, barter for information (to remove uncertainty), ???
 
-### The scientific method
+
+Creativity
+Curiosity
+Consciousness
+
+# The scientific method
 
 Building the perfect scientist. Querying the world, falsifying hypotheses. Prediction and action.
 Causality. Counterfactuals.
 
+***
+Writing this helped me realise that I need to either narrow these down and to find patterns among the questions/topics I am interested.
