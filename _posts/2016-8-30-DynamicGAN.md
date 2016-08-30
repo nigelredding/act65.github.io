@@ -1,0 +1,12 @@
+---
+layout: post
+title: DyanGAN
+category: problem
+published: false
+---
+
+GANs are a pain in the ass to train (speaking from experience). Neural networks can be sensitive to initialisations and learning rates, and GANs add yet another layer to the tower of cards.
+
+While my GAN was frustratingly not working
+
+Maybe we can borrow ideas from dynamical systems to help control our system.
