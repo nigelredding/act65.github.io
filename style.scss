@@ -20,7 +20,7 @@ html {
 body {
 	background: $white;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: $darkerGray;
 }
 
 .container {
@@ -41,7 +41,7 @@ underline {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $blue;
   font-weight: bold;
 
   line-height: 1.7;
@@ -55,9 +55,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
-  a {
-    color: inherit;
-  }
 }
 
 h2 {
