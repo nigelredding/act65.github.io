@@ -12,6 +12,7 @@ This place for me to put the things I want other people to see, for the things I
 * thinking and learning,
 * languages for languages,
 * languages
+* explain explanation [David Deutsch](https://www.youtube.com/watch?v=folTvNDL08A),
 * science on science,
 * science,
 * solving problem-solving, and problem-solving problems,
@@ -19,3 +20,4 @@ This place for me to put the things I want other people to see, for the things I
 
 and all the other meta things I wish I were better at. But in reality, posts will probably be related to cognition, computers and math: mainly centered around neutral networks and deep learning.
 
+In the unlikely case that someone actually listens to me. Disclaimer: I take no responsible … if you send 5 years chasing some idea…

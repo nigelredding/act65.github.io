@@ -5,18 +5,14 @@ permalink: /interests/
 published: true
 ---
 
-# Structures
+# Complex structures
 
-> How can we design structures that function how we want them to? Why do certain structures work so well?
-
-How does structure effect function? (To be honest I am not quite learn what I mean by this question, but that is half the effort) 
-What is the best way to think about some thing? Generally, using some language that reflects the true structure. Some languages are better than others, why?
-
-Aka patterns?
+How does structure effect function? Structure is function.
+Built on simple foundations, … ?
 
 ### Languages
 
-> 
+> Semantic and syntax. 
 
 * Why is linear algebra such an effective language for thinking about and implementing structure in systems? What would a non-linear and differentiable language for structure look like? What language would allow me to differentiably learn, say, a convolution? What alternatives are there to representing information that rival linear algebra?
 * What is the right language for describing systems of loss functions, optimisers and agents? How should they be composed and decomposed?
@@ -30,25 +26,49 @@ Aka patterns?
 
 ### Architectures
 
-> How does the architecture of an algorithm, computer, ?, 
+>  
 
-* Computer architectures. Von Neumann, neuromorphic, photonic, micro-fluid, biological, 
+* How does the architecture of a GPU reflect its function? Why is linear algebra so efficient on GPUs? Because fundamentally, a GPU is linear algebra.
+* How can alternative computer architectures be used for different problems, what will they be good at? Von Neumann, neuromorphic, photonic, micro-fluid, biological, 
 * How can quantum computers, (photonic?), biological computers and neuromorphic computers help us achieve ??? Does does their structure reflect ??
-* The links between GPUs, CUDA and linear algebra and NNs.
 * Algorithmic architectures. Neural networks, ?? Why are Resnets, or Fractal nets, or … suited for their task?
 
 ### Physics
 
-> Given that we live in a universe governed by physics (a set of rules), how does that determine the things that are possible, and what are the limits? How does (and should) this influence the way we design our tools?
+> Given that we live in a universe governed by physics, how does that determine the things that are possible, and what are the limits? How does (and should) this influence the way we design our tools?
 
 * The math that describes physics has a nice habit of being incredibly useful elsewhere…
 * Variational calculus and optimisation. 
 * Connections to dynamical systems. Chaos? Emergence?
 * Does $P = NP$? This is one of my favourite questions as it is really asking deep physical questions. What is possible given the physics of our universe?  Will our problems always be hard to solve/learn?
 * Foundations and deeper truths. Godel's incompleteness, turing's halting, ???, EWA
-* Physically inspired algorithms. [Learning as diffusion]()
+* Learning and its connection to physics.
 * Quantum computing.
 * How fast is it possible to learn something? What are the limits to how much you can learn given that we live in a world governed by physics? Similarly, how fast can you optimise a function?
+* If physics is fundamentally linear (like in quantum mechanics) then how should we be designing computers and algorithms to reflect/exploit this?
+
+### Distributed systems
+
+How can we coordinate multiple learners/agents? 
+What happens if they process things at different speeds, how can we assign credit?Timing, ... causality.  
+Economies
+
+A distributed learning algorithm?!?
+Learning to communicate?
+How should information (gradients, uncertainty, …?) be propagated/communicated? Resets, densely connected nets, TD learning — all allow the interference for information from different …? How should this information interact?
+
+Can we do as well or better than backprop through time (for training recurrent nets) with an efficient online algorithm (not requiring to store all our mental states for our lifetime and then play it backwards)?  Brains clearly achieve this feat but we have no clue how. TD learning? 
+
+Group management?
+
+Viewing the brain as a system of agents who compete for cognitive resources, barter for information (to remove uncertainty), ???
+
+### Wetware and all that  
+
+The most complex systems we know of, us. Genetics, epigenetics, synthetic biology, neuroscience.  How are we designed and managed? What biases and heuristics are pre-programmed within us? What is the minimal set of assumptions/heuristics/pre-programming that can lead to intelligence?
+
+The brain. How does it work!?!?! [Surfing uncertainty -- Andy Clark](https://www.goodreads.com/book/show/25823558-surfing-uncertainty) Is consciousness just an illusion? The result of our brains trying to predict the world, and yet living within the world.
+
 
 
 # Efficiency
@@ -69,6 +89,8 @@ Aka patterns?
 
 # Learning
 
+> Generating structure from ???
+
 > Learning is ... ??? finding structure ???
 
 * The brain implements specialised optimisers [Integration of DL and neuro... -- Marblestone](https://arxiv.org/abs/1606.03813). How can we learn these specialised systems? How can you learn to learn? [Learning to learn -- Andrychowicz](https://arxiv.org/abs/1606.04474)
@@ -82,6 +104,8 @@ Aka patterns?
 * Exploding/vanishing gradients, internal covariance shift, catastrophic interference and continuous learning, curse of dimensionality
 * NNs, how do they work?!?!
 * The big ones; credit assignment, catastrophic interference, invariant and disentangled representations, 
+Creativity
+Curiosity
 
 ### Memory and unsupervised learning
 
@@ -107,39 +131,9 @@ Process learning.
 Education.
 
 
-# Complex systems
-
-### Distributed systems
-
-How can we coordinate multiple learners/agents? 
-What happens if they process things at different speeds, how can we assign credit?Timing, ... causality.  
-Economies
-
-A distributed learning algorithm?!?
-Learning to communicate?
-
-Can we do as well or better than backprop through time (for training recurrent nets) with an efficient online algorithm (not requiring to store all our mental states for our lifetime and then play it backwards)?  Brains clearly achieve this feat but we have no clue how. TD learning? 
-
-Group management?
-
-Viewing the brain as a system of agents who compete for cognitive resources, barter for information (to remove uncertainty), ???
-
-### Wetware and all that  
-
-The most complex systems we know of, us. Genetics, epigenetics, synthetic biology, neuroscience.  How are we designed and managed? What biases and heuristics are pre-programmed within us? What is the minimal set of assumptions/heuristics to lead to intelligence?
-
-The brain. How does it work!?!?! [Surfing uncertainty -- Andy Clark](https://www.goodreads.com/book/show/25823558-surfing-uncertainty) Is consciousness just an illusion? The result of our brains trying to predict the world, and yet living within the world.
-
-
-
-Creativity
-Curiosity
-Consciousness
-
-# The scientific method
+# The scientific method 
 
 Building the perfect scientist. Querying the world, falsifying hypotheses. Prediction and action.
 Causality. Counterfactuals.
-
-***
-Writing this helped me realise that I need to either narrow these down and to find patterns among the questions/topics I am interested.
+Specificity. Explanations, rationalism, 
+The perfect scientist would ?. It’s a method

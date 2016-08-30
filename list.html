@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="posts">
+  
+Some open problems I may get around to investigating/solving. Ideally these will turn into full blown projects, or quietly die (as it was probably a stupid idea…). The real goal here is to be able to motivate them properly.
+  {% for post in site.posts %}
+    {% if post.category contains "problem" %}
+
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+
+    {% endif %}
+  {% endfor %}
+</div>

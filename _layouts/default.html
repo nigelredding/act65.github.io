@@ -3,7 +3,7 @@
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     {% include meta.html %}
-    {% include head.html %}
+    {% include mathjax.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,9 +27,9 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
             <a href="{{ site.baseurl }}/interests">Interests</a>
+            <a href="{{ site.baseurl }}/list">Puzzles</a>
           </nav>
         </header>
       </div>
