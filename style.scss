@@ -41,7 +41,7 @@ underline {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $blue;
+  color: $gray;
   font-weight: bold;
 
   line-height: 1.7;
@@ -264,7 +264,7 @@ nav {
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
+    font-size: 18px;
     font-style: italic;
   }
 
