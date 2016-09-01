@@ -7,7 +7,7 @@ published: true
 
 # About me
 
-My name is Alex. I am a wanna-be researcher, and maybe someday i’ll make it.
+Hey, my name is Alex. I am a wanna-be researcher, maybe someday i’ll make it.
 
 I like thinking about thinking, learning to learn, languages for languages, explaining explanation, science on science, solving problem-solving, and problem-solving problems, and thinking about which problems are important and why.
 

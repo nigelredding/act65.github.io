@@ -7,8 +7,7 @@ published: true
 
 # Complex structures
 
-How does structure effect function? Structure is function.
-Built on simple foundations, … ?
+How does structure effect function? Structure is function.(?)
 
 ### Languages
 
@@ -19,7 +18,7 @@ Built on simple foundations, … ?
 * [Tensorflow](https://www.tensorflow.org/), [Edward](http://edwardlib.org/), ... This is what AI will look like for the foreseeable future, better tools, manifesting as programs and programming languages. What makes these languages effective and useful?
 * Graphical models (of computation) where gradients and/or uncertainty (and maybe even loss) can flow along edges and between nodes. Propagation (communication) of information through networks.
 * (Programming) Languages. Lambda calculus, ...??? Functional programming ??? Compliers and ??? Declarative.
-* What does the english language reflect about how we think, and how does the english language effect the way we think? Why is english such a successful language for communication, reason and ___ ? 
+* What does the english language reflect about how we think, and how does the english language effect the way we think? Why is english such a successful language for communication, reason and ??? 
 * Why should we build some languages based on set theory and others on type theory?
 * What is optimal language syntax? Meta languages. CFG, or ...? H
 * Recursion.
@@ -84,6 +83,7 @@ The brain. How does it work!?!?! [Surfing uncertainty -- Andy Clark](https://www
 
 
 ### Entropy
+
 * Kolmogorov complexity.
 * Learning is the opposite of (physical) entropy? Certainly structure is.
 
