@@ -41,8 +41,9 @@ underline {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $gray;
+  color: $darkGray;
   font-weight: bold;
+  text-decoration: underline;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -67,7 +68,6 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
 }
 
 p {
