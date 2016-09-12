@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  Can we treat loss functions as first class functions?
+title:  How can we use loss functions as first class functions?
 category: problem
 ---
 
-Is there some formal system that can take loss functions as [first class](https://en.wikipedia.org/wiki/First-class_function) objects which can be passed around, transformed, composed, … ? Thus allowing for [high order](https://en.wikipedia.org/wiki/Higher-order_function) loss functions. Much like functions can be in functional programming (interestingly, we could make a recursive loss functions).
+Is there some language that can take loss functions as [first class](https://en.wikipedia.org/wiki/First-class_function) objects which can be passed around, transformed, composed, … ? Thus allowing for [high order](https://en.wikipedia.org/wiki/Higher-order_function) loss functions. Much like functions can be in functional programming (interestingly, we could make a recursive loss functions).
 
 Can we make this into a more general framework, where we can reason about how to compose and decompose loss functions? It would be nice to be able to say that the global loss function of a GAN is ???, or that some distributed system of agents is minimising ???, or … ???
 

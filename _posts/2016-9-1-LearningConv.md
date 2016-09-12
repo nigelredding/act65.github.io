@@ -8,7 +8,7 @@ Instead of preprogramming structure into our neural networks, how can we design 
 
 Alternatively, I am imagining a system that can do automatic weight tying. That, given a dataset of images, can learn that a convolution is the optimal operation to be doing.
 
-Could this can be formulated as the problem of agents learning a communication protocol. How should information (usually represented in matrices) be stored and communicated.
+Could this can be formulated as the problem of agents learning a communication protocol. How should information (usually represented in matrices) be stored and communicated?
 
 
 ### Related
