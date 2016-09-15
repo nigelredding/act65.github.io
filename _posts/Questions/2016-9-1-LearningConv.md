@@ -2,6 +2,7 @@
 layout: post
 title: Can a neural net learn to do a convolution?
 category: problem
+rating: 1
 ---
 
 Instead of preprogramming structure into our neural networks, how can we design them with fewer prior assumptions? Is it possible to design differentiable structure that is more felxible than our current architectures. One that can learn a [ResNet](https://arxiv.org/abs/1512.03385), a [Fractal Net](https://arxiv.org/abs/1605.07648), a [DenseNet](http://arxiv.org/abs/1608.06993), ... 

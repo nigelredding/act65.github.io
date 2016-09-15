@@ -3,6 +3,7 @@ layout: post
 title: Is our current view of second order optimisation wrong?
 category: problem
 published: false
+rating: 1
 ---
 
 Current ??? says that second order is not necessary. Aka the computational trade off between calculating more datapoints and their gradients and calculating fewer datapoint, but their gradients and hessians,...

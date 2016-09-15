@@ -45,6 +45,13 @@ published: true
 * The brain, how does it work?!? [Surfing uncertainty -- Andy Clark](https://www.goodreads.com/book/show/25823558-surfing-uncertainty) Is consciousness just an illusion? The result of our brains trying to predict the world, and yet living within the world.
 * Can we find an effective distributed learning algorithm? Can we do as well or better than backprop through time (for training recurrent nets) with an efficient online algorithm (not requiring to store all our mental states for our lifetime and then play it backwards)?  Brains clearly achieve this feat but we have no clue how. TD learning? 
 
+# Computation
+
+* Computtional complexity
+* Information theory
+* Church-turing thesis
+* 
+
 
 # Efficiency
 

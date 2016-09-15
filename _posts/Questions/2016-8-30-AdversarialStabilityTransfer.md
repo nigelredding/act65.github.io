@@ -3,6 +3,7 @@ layout: post
 title: How are adversarial training, stability and transfer lear
 category: problem
 published: false
+rating: 1
 ---
 
 

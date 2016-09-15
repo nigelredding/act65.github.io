@@ -3,6 +3,7 @@ layout: post
 title: What can quantum physics tell us about neural networks?
 category: problem
 published: false
+rating: 1
 ---
 
 However, I don’t think it makes much sense to think about the paths in a linear net as they all just collapse back down to a single layer, so the number of paths is somewhat irrelevant (this is wrong). But I think that using complex numbers may change this??? (Like how some two-qubit states - described by complex numbers - can't be written as the tensor product of one-qubit states, e.g. the EPR pair). Something about the way complex numbers can constructively/destructively interfere which I have yet to understand. What can complex linear nets do? This is somewhat inspired by the fact that transformations on quantum states is [linear](http://arxiv.org/pdf/quant-ph/9801041.pdf). 

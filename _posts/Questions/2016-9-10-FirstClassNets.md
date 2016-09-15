@@ -2,6 +2,7 @@
 layout: post
 title:  A functional language for neural networks?
 category: problem
+rating: 1
 ---
 
 Is it possible to make an equivalent of a universal turing machine for neural networks. Where we have a networks that we can pass a description of another network and some inputs and it can 

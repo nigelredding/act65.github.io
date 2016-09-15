@@ -1,13 +1,16 @@
 ---
 layout: default
 ---
-
+Blue is for good ideas. Gray is for previously good ideas.
 <div class="posts">
   {% for post in site.posts %}
     {% if post.category contains "problem" %}
-
-        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-
+      {% if post.rating == 0 %}
+        <a1 href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a1>
+      {% endif %}
+      {% if post.rating == 1 %}
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      {% endif %}
     {% endif %}
   {% endfor %}
 </div>

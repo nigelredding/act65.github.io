@@ -70,6 +70,7 @@ h4 {
   font-size: 18px;
 }
 
+
 p {
   margin: 15px 0;
 }
@@ -80,6 +81,16 @@ a {
 	cursor: pointer;
   &:hover, &:active {
     color: $blue;
+    text-decoration: underline;
+  }
+}
+
+a1 {
+  color: $gray;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $gray;
     text-decoration: underline;
   }
 }
