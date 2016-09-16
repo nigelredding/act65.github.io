@@ -2,14 +2,18 @@
 layout: post
 title: How can we be wrong faster and more often?
 category: problem
-published: false
 rating: 1
 ---
 
-Make lots of predictions. Aka TD learning. Every step try in you computation, try to predict something local.(yes it is cool that every thing can be parallelised, and …) 
+Failure is the best/only way to learn (?). How can we fail more and faster? Failing more is the general idea behind TD learning (??!?). But how can we failing faster?
+
+* In forward-mode TD learning you need to wait D (depth) time steps for the input to filter through the layers to the output, and then $[0,D]$ steps for the associated loss to filter backward through the layers.
+* In generative/backward-mode TD learning you need to wait $[0-D]$ (depth) steps for the input/associated loss to filter through the layers to the output. This occurs because the top layer of the generative model predicts what is going to happen in D time steps.
+
+<center><img src="{{ site.url }}/Images/GenTD.png" alt="GenTD" align="middle" height="350" width="500"></center>
 
 
-How can we be wrong faster/earlier? When training with TD we need to wait for error signals to slowly filter back through our ???. 
+### Thoughts
 
-
-Would this allow us to adapt faster? Can we prove it?
+* How can this be used in a reinforcement learning setting? Does this imply that we should be generating actions and their effects?
+* This is super close to the architecture described in [Surfing Uncertainty](https://www.goodreads.com/book/show/25823558-surfing-uncertainty)
