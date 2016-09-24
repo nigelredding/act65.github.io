@@ -9,7 +9,12 @@ How does the structure of a problem determine the structure of efficient solutio
 
 Images are naturally invariant to translation (and some other variables - rotations, size, colour...) and convolutions are commonly used for images, why? Because if we could imagine the transformations done by convolutions as some sort of structue we would see that they are invariant to translation.
 
+
+
+### Thoughts
 * Is there a better way to measure the amount of computation required?
 * How can we represent algorithms as structures? 
     * What symmetries do these structures have? 
-    * Do all NP-complete problems share the same symmetries?
+    * Do all NP-complete problems share the same symmetries?   
+* Can we relate these symmetries to something like group theory? Alternatively, what properties are conserved?
+    

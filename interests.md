@@ -38,12 +38,19 @@ published: true
 * The unreasonable effectiveness of physical math in other areas.
 * How do symmetries in physics
 
-# Brains and bodies
+# Cognitive science
 
-* The most complex systems we know of, us. Genetics, epigenetics, synthetic biology, neuroscience. How are we designed and managed? 
 * What biases and heuristics are pre-programmed within us? What is the minimal set of assumptions/heuristics/pre-programming that can lead to intelligence?
 * The brain, how does it work?!? [Surfing uncertainty -- Andy Clark](https://www.goodreads.com/book/show/25823558-surfing-uncertainty) Is consciousness just an illusion? The result of our brains trying to predict the world, and yet living within the world.
 * Can we find an effective distributed learning algorithm? Can we do as well or better than backprop through time (for training recurrent nets) with an efficient online algorithm (not requiring to store all our mental states for our lifetime and then play it backwards)?  Brains clearly achieve this feat but we have no clue how. TD learning? 
+* Why are people biased? How are these biases a necessary result of efficient information processing?
+* 
+
+# Genetics
+
+* The most complex systems we know of, us. Genetics, epigenetics, synthetic biology, ... How are we designed and managed?
+* Protien networks. Epigenetic control/regulation of genes (gene networks).
+* 
 
 # Computation
 
@@ -87,7 +94,7 @@ published: true
 * Calculus, automatic gradients
 * Linear algebra and tensors
 * Symmetry, groups, ...
-* 
+* A language for clear thought! If you understand a problem, then you can describe it using math. (kinda of?)
 
 
 # Philosophy

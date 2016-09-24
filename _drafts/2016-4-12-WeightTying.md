@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weighting and invariance
+title: Weight tying and invariance
 ---
 
 What makes a good representation?? (invariant, specific, independent?, ) 
@@ -35,3 +35,6 @@ How can we know which variables our features should be invariant to?
 
 
 > We conjecture that the main computational goal of the ventral stream of visual cortex is to provide a hierarchical representation of new objects/images which is invariant to transformations, stable, and selective for recognition—and show how this representation may be continuously learned in an unsupervised way during development and visual experience. (Anselmi, 2014)
+
+# Proof that weight tying helps!!
+
