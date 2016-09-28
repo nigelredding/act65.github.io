@@ -9,13 +9,13 @@ published: true
 
 > Semantic and syntax. 
 
-* Why is linear algebra such an effective language for thinking about and implementing structure in systems? What would a non-linear and differentiable language for structure look like? What language would allow me to differentiably learn, say, a convolution? What alternatives are there to representing information that rival linear algebra?
-* What is the right language for describing systems of loss functions, optimisers and agents? How should they be composed and decomposed?
-* [Tensorflow](https://www.tensorflow.org/), [Edward](http://edwardlib.org/), [](), ... This is what AI will look like for the foreseeable future, better tools, manifesting as programs and programming languages. What makes these languages effective and useful?
-* Graphical languages ... (e.g. [PGMs](), [tensor networks](), category theory, geometry, ... ???) What languages can help humans understand abstract and confusing concepts?
-    * Graphical models (of computation) where gradients and/or uncertainty (and maybe even loss) can flow along edges and between nodes. 
+* [First class](http://act65.github.io/FirstClassNets/)
+* [Linear algebra](http://act65.github.io/LinAlg/)
+* [Better tools](http://act65.github.io/ProgLang/)
+* Graphical languages ... (e.g. [PGMs](), [tensor networks](), category theory, geometry, ... ???) How can languages can help humans understand abstract and complex concepts?
+* Why are graphical models (e.g. of computation) so powerful? How should information (gradients, uncertainty, …?) be propagated/communicated? How useful is it to be able to propagate gradients and/or uncertainty (and maybe even loss) along edges and between nodes. 
 * What does the english language reflect about how we think, and how does the english language effect the way we think? Why is english such a successful language for communication and reason?
-* How should information (gradients, uncertainty, …?) be propagated/communicated? Resets, densely connected nets, TD learning — all allow the interference for information from different …? How should this information interact?
+<!--* Meta-structure in language. Parsers, contextfree grammars ...-->
 
 
 # Architectures
@@ -101,4 +101,4 @@ published: true
 
 * How can we build the perfect scientist? One that queries the world, makes specific predictions and falsifies hypotheses. 
 * Scientific method
-*  
+* 

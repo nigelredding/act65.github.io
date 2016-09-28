@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  A functional language for neural networks?
+title:  A functional language for neural networks, loss functions, optimisers, ...?
 category: problem
 rating: 1
 ---
+
+What is the right language for describing systems of loss functions, optimisers and agents? How should they be composed and decomposed? 
 
 Is it possible to make an equivalent of a universal turing machine for neural networks. Where we have a networks that we can pass a description of another network and some inputs and it can 
 
