@@ -4,7 +4,7 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    {% if post.category contains "main" %}
+    {% unless post.category contains "problem" %}
       <article class="post">
 
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -13,6 +13,6 @@ layout: default
           <i>{{ post.subtitle }}</i> {{ post.excerpt }}
         </div>
       </article>
-    {% endif %}
+    {% endunless %}
   {% endfor %}
 </div>
