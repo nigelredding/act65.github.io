@@ -5,16 +5,16 @@ category: problem
 rating: 1
 ---
 
-Could the complexity of a problem actually a conserved quantity? (This is vaugley inspired by Scott Aaronson's [quip](http://www.scottaaronson.com/blog/?p=2212) about the latest claim that $P=NP$)
+Could the complexity of a problem/algorithm be a conserved quantity? (This is vaugley inspired by Scott Aaronson's [quip](http://www.scottaaronson.com/blog/?p=2212) about the latest claim that $P=NP$)
 
 > All proposals along these lines simply _“smuggle the exponentiality”_ somewhere that isn’t being explicitly considered
 
-I am imagining that each increase in efficiency we see is actually _smuggling_ the complexity somewhere else. For example;
+I am imagining that increases in efficiency (that we see so regularly) are actually _smuggling_ the complexity somewhere else. For example;
 
-* increases in 'efficiency' of matmuls are actually costing us elsewhere. Maybe we are having to do more irreversable computations (which we wouldn't notice atm).
+* increases in 'efficiency' of matmuls are actually costing us elsewhere. Maybe we are having to do more irreversable computations (which we wouldn't notice atm (?)).
 * or ??
 
-If I had to write an equation that looked nice but didn't really say much I would write this. $\mathcal C$ stand for complexity.
+If I wrote an equation that looked nice but didn't really say much it would be the one below.
 
 $$
 \begin{align*}
@@ -30,3 +30,4 @@ $$
 * How can we represent problems/algorithms as structures?
     * What symmetries do these structures have? 
     * Do all NP-complete problems share the same symmetries?
+* This seems like a fundamental property to the task that is trying to be achieved. And each potential algorithm ...? (struggling with the line between problem and solution)
