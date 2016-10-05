@@ -2,7 +2,6 @@
 layout: post
 title:  A functional language for neural networks, loss functions, optimisers, ...?
 category: problem
-rating: 1
 ---
 
 What is the right language for describing systems of loss functions, optimisers and agents? How should they be composed and decomposed? 

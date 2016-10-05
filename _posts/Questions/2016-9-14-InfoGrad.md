@@ -2,7 +2,6 @@
 layout: post
 title: How informative are gradients?
 category: problem
-rating: 1
 ---
 
 How much information does a gradient tell us?

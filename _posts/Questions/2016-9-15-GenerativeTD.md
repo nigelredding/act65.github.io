@@ -2,7 +2,6 @@
 layout: post
 title: How can we be wrong faster and more often?
 category: problem
-rating: 1
 ---
 
 Failure is the best/only way to learn (?). How can we fail more and faster? Failing more is the general idea behind TD learning (??!?). But how can we fail faster?

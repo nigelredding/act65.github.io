@@ -2,7 +2,6 @@
 layout: post
 title: A splitting architecture to break saddles?
 category: problem
-rating: 1
 ---
 
 How can we learn complicated, non-convex loss functions? The general idea behind [curriculum learning]() is to gradually learn more complex loss functions, while each intermetiate loss function is somehow related to your true goal. I like to think about this as a type of [transfer learning]() between the simpler learner (/loss function) to the more complex.

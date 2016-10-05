@@ -2,7 +2,6 @@
 layout: post
 title: A single global minima or many?
 category: problem
-rating: 1
 ---
 
 In [Deep learning without poor local minima](https://arxiv.org/abs/1605.07110), Kenji proves that _Every local minimum is a global minimum_ (see Theorem 2.3 ii) for a linear feedforward neural network of the form;

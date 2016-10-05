@@ -2,12 +2,11 @@
 layout: page
 title: About
 permalink: /about/
-published: true
 ---
 
 # About me
 
-Hey, my name is Alex. When I am not getting distracted by life I like thinking about thinking, learning to learn, languages for languages, explaining explanation, science on science, solving problem-solving, and problem-solving problems, and all that meta stuff I wish I were better at. I also like thinking about which problems are important and why.
+Hey, my name is Alex. When I am not getting distracted from my distractions I like thinking about thinking, learning to learn, languages for languages, explaining explanation, science on science, solving problem-solving, and problem-solving problems, and all that meta stuff I wish I were better at. I also like thinking about which problems are important and why.
 
 # About this blog
 
