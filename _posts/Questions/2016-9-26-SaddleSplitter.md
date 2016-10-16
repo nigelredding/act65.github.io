@@ -42,4 +42,9 @@ $$\mathcal L = \parallel x - ABx\parallel_2^2$$
 
 and we split $B$ into $CD$ such that $B = CD$ then does it help us learn faster? Intuitively, this feels somewhat like the kernel trick, where we can use the extra dimensionality of the reparameterised $CD$ to make our way around saddles or other obstacles in the loss surface.
 
-[Deep learning without poor local minima](https://arxiv.org/abs/1605.07110) has an interesting note at the end of the appendicies about how 
+[Deep learning without poor local minima](https://arxiv.org/abs/1605.07110) has an interesting note at the end of the appendices about how … ???
+
+
+### HT decomposition
+
+Start with a big wide network. Split the wide net into two matrices. ... This is doing a HT decomposition!! (??)

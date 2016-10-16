@@ -13,13 +13,19 @@ I am imagining that each problem has some fixed amount of complexity, a set stru
 Increases in efficiency (that we see so regularly) may actually be _smuggling_ the complexity somewhere else. For example;
 
 * increases in 'efficiency' of matmuls are actually costing us elsewhere. Maybe we are having to do more irreversible computations (which we probably wouldn't notice atm (?)).
-* or ??
+* or what if there is too much data to store in a central location (bounded communication),
+* or in a domain where we cannot assume IID
+* or
 
 $$
 \begin{align*}
-\mathcal{C}_{error} + \mathcal{C}_{robustness} = \mathcal{C}_{energy} + \mathcal{C}_{time} + \mathcal{C}_{memory} + \mathcal{C}_{data} = const.\\
+\mathcal{C}_{error} + \mathcal{C}_{robustness} = \mathcal{C}_{energy} + \mathcal{C}_{time} + \mathcal{C}_{memory} + \mathcal{C}_{parallel} + \mathcal{C}_{data} + \mathcal C_{privacy} = const.\\
 \end{align*}
 $$
+
+This is about trade-offs.
+
+
 
 ### Thoughts
 
