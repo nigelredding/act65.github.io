@@ -12,6 +12,8 @@ Relatedly, is there some language that can take loss functions as [first class](
 
 Can we make this into a more general framework, where we can reason about how to compose and decompose parameterised (loss) functions?
 
+<!-- We can do this with tf in some senses? Connecting nets together. We just dont have ideas about what the result will be-->
+
 ### Related ideas and resources
 
 * How are the layers in a neural net related to the tapes in a turing machine?
