@@ -1,7 +1,10 @@
 ---
 layout: post
-title: 
+title: Learning styles?
+category: main
 ---
+
+
 A survey of ???
 For each I aim to describe the;
 * problem (high level),

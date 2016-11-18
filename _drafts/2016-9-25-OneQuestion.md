@@ -1,6 +1,7 @@
 ---
 layout: post
 title: What is learnable?
+category: main
 ---
 
 One question to rule them all.

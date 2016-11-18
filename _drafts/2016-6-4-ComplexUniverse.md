@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Explaining a complex universe
+category: main
 ---
 
 And what would happen if we could explain the universe in a theory of everything?
