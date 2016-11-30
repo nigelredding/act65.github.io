@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="posts">
   {% for post in site.posts %}
-    {% if post.category contains "problem" %}
+    {% if post.category contains "question" %}
       {% unless post.rating == 0 %}
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       {% endunless %}

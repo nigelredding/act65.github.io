@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Recursive optimisation
-category: problem
+category: question
 ---
 
 

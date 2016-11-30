@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What do symmetries in problems imply about…
-category: problem
+category: question
 rating: 1
 ---
 

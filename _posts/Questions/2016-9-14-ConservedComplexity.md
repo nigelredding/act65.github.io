@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Is complexity conserved?
-category: problem
+category: question
 ---
 
 Could the complexity of a problem/algorithm be a conserved quantity? (This is vaguely inspired by Scott Aaronson's [quip](http://www.scottaaronson.com/blog/?p=2212) about the latest claim that $P=NP$)
