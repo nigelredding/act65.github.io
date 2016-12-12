@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: post
+title: Questions
 ---
+
 <div class="posts">
   {% for post in site.posts %}
     {% if post.category contains "question" %}

@@ -1,12 +1,9 @@
 ---
 layout: post
-title: Outline
-category: summary
+title: Summaries
 ---
 
 Each weekend I am going to summarise a paper that interests me. They will probably be related to memory, learning and/or reasoning.
-
-## Motivation 
 
 I want to write some summaries for a couple of reasons.
 
@@ -16,11 +13,20 @@ I want to write some summaries for a couple of reasons.
 * It helps me focus (which I struggle with).
 
 
-## Process
+### Process
 
-What is the problem setting?
-What problem did they solve?
-How did they do it?
-Why is it important?
-Where is it going? (how does it fit into future research directions?)
-What problems to they sweep under the rug?
+* What is the problem setting?
+* What problem did they solve?
+* How did they do it?
+* Why is it important?
+* Where is it going? (how does it fit into future research directions?)
+* What problems to they sweep under the rug?
+
+<div class="posts">
+  {% for post in site.posts %}
+    {% if post.category contains "summary" %}
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    <br>
+    {% endif %}
+  {% endfor %}
+</div>
