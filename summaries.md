@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: post
+title: Summaries
+permalink: /summaries/
 ---
-
 
 Each weekend I am going to summarise a paper that interests me. They will probably be related to memory, learning and/or reasoning.
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Questions
+permalink: /questions/
 ---
 
 <div class="posts">

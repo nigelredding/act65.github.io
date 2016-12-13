@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Answers
+permalink: /answers/
 ---
 
 I want to think about: What problem(s) do well known techniques/approaches help us solve? Or in other words, what problems can answers be applied to? In essence, why bother?
