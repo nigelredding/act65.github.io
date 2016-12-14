@@ -18,16 +18,9 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkerGray;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
 }
 
 my {
@@ -132,13 +125,32 @@ img {
   max-width: 100%;
 }
 
-.center-image
-{
+// My utilities
+
+.center-image {
     margin: 0 auto;
     display: block;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+}
 
+// a side-margin note
+side {
+  float:none;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  margin: 0;
+  margin-right: 50px;
+  font: 14px/1.4 $helvetica;
+  font-style: italic;
+  color: $gray;
+}
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {

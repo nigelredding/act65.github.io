@@ -25,4 +25,4 @@ I have lots of [questions](http://act65.github.io/questions/) and most are promp
 
 ### Jekyll
 
-I simply forked this blog from [Jekyll Now](https://github.com/barryclark/jekyll-now) and renamed it (it took me a couple of hours…). Feel free to fork the original or [my blog](https://github.com/act65/act65.github.io).
+I simply forked this blog from [Jekyll Now](https://github.com/barryclark/jekyll-now) and renamed it (it took me a couple of hours…). Feel free to fork the original or [mine](https://github.com/act65/act65.github.io).
