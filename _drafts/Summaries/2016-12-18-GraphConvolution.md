@@ -4,7 +4,7 @@ title: Semi-supervised classification with graph convolutional networks
 category: summary
 ---
 
-_This post is based around [Thomas Kipf's paper/post](https://tkipf.github.io/graph-convolutional-networks/#fn2) and [Ferenc Huszár's post](http://www.inference.vc/how-powerful-are-graph-convolutions-review-of-kipf-welling-2016-2/)._
+_This post is based around [Thomas Kipf's paper/post](https://tkipf.github.io/graph-convolutional-networks/#fn2) and ???._
 
 ## Problem setting
 
@@ -39,9 +39,25 @@ $$x*g_{\theta}  = Ug_{\theta}U^Tx$$
 > What is a Fourier transform at its core? An expansion of function in terms of eigenfunctions of the Laplacian. For a function on the real line, the Laplacian is simply the second derivative. The functions mapped to multiples of themselves by taking second derivatives are sines and cosines of various frequencies. A Fourier series is a change of basis, using as basis vectors those functions who behave the simplest under the second derivative.
 The Fourier transform of a function on a graph is also a change of basis, expanding a discrete function in terms of eigenvalues of the Laplacian, in this case the graph Laplacian. ([John Cook](http://www.johndcook.com/blog/2016/02/09/fourier-transform-of-a-function-on-a-graph/))
 
+### Layer wise linear model
+
+$$
+\begin{align}
+\tilde A = A+I \\
+\tilde D_{ii} = \sum_j \tilde A_{ij} \\
+\end{align}
+$$
+
 ### Semi-supervised node classification
 
+
+$$\tilde A = D^{\frac{−1}{2}}A D^{\frac{−1}{2}} $$
+
 $$ Z = f(X,A) = \sigma(\tilde A \rho (\tilde AXW_0)W_1) $$
+
+So really we are just transforming each layer by ??? (some transform related to the adjacency matrix). How is this acting per row/column?
+
+
 
 # Thoughts
 
@@ -57,6 +73,9 @@ How else can you represent a graph?
 
 * A recursive/self-referencing language?
 * ?
+* A matrix/list of edge connections?
+
+What do we need the representation to be able to do? How do we want to use it?
 
 ### Dimensionality reduction
 
@@ -67,16 +86,37 @@ Adjacency matrix at every layer?!? We are not really managing to compress this t
 
 ### Why I think this paper is important
 
-
+* Helped me understand the potential power of NNs working on graphs. For example (Chemistry paper).
+  * http://papers.nips.cc/paper/5954-convolutional-networks-on-graphs-for-learning-molecular-fingerprints.pdf
+    * https://arxiv.org/abs/1610.02415
 
 ### Issues, criticisms and things to keep in mind
 
+> in equation (2) you only have a parameter matrix, rather than a parameter tensor. This means that you can't really parametrise how the information from the local neighbourhood gets combined, that's all fixed and prescribed by the adjacency matrix.
 
 ### Why is this problem hard/useful?
 
 
 ### Questions
 
-
+* A version of graph invariance?
+* Want convolution over nodes + their nearest neighbors?
+* How do we ensure we dont go around in loops? What is the best way to travel through/along the graph?
+* How is this setting different to just clustering in some hidden space? How much does the information about connections (from the graph) actually help? How much can (and should) it tell us?
+  * Allows us to make assumptions: `if connected then similar`. Rather than calculating hidden representations?
+  * ?!?
 
 # Conclusion
+
+***
+
+# Resources
+
+* [Ferenc Huszár's post](http://www.inference.vc/how-powerful-are-graph-convolutions-review-of-kipf-welling-2016-2/)
+* http://www.math.ucsd.edu/~fan/research/cb/ch1.pdf
+* http://www.johndcook.com/blog/2016/02/09/fourier-transform-of-a-function-on-a-graph/
+* https://arxiv.org/abs/1511.02136
+* https://arxiv.org/abs/1606.09375
+https://arxiv.org/pdf/1511.05493v3.pdf
+https://arxiv.org/pdf/1612.04883.pdf
+http://www.tau.ac.il/~nogaa/PDFS/adfs8.pdf
