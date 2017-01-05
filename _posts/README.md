@@ -16,6 +16,5 @@ Other potential topics;
   * Generalisation.
   * Tradeoffs. Complexity measures of required resources. Time, memory, data, accuracy, robustness, parallelism, energy, ...
 * compression. AIT, AEs, dim reduction,
-* langauges. Semantics, syntax, NLP, programming, lambda calc, ... HoTT,
 * probability.
 *
