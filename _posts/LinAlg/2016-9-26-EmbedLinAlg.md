@@ -3,7 +3,7 @@ layout: post
 title: Embedding into linear algebra
 ---
 
-This post is about why linear algebra is cool. It is a powerful language that can easily embed other more interesting languages/systems/grammars/...? For example, computation, dual numbers, holographic representations, ???
+Linear algebra is a powerful language that can embed other more interesting languages/systems/grammars/...? For example, computation, dual numbers, holographic representations, ???
 Others? What about graphics, or ??, or
 
 
@@ -11,17 +11,45 @@ Others? What about graphics, or ??, or
 
 Why is this cool? It is a general way to represent things. The power comes from it ability to make different operators by simply changing structure?
 
-##### Dual and complex numbers
+But are these more that just nice mathematical curiosities? Why is this useful or important?
+
+##### Dual numbers
+
+> the dual numbers extend the real numbers by adjoining one new element $\epsilon$ with the property $\epsilon^2 = 0$.
+
+<side>Is this a functor? A transformation that preserves the structure?</side>
 
 $$
-\begin{align}
-a + b\epsilon \equiv
+a + b\epsilon \rightarrow
+\begin{bmatrix}
+a & b \\
+0 & a \\
+\end{bmatrix} \\
+$$
+
+
+$$
+\begin{align*}
+ (a + b\epsilon)(c + d\epsilon) &= ac + ad\epsilon + bc\epsilon + bd\epsilon^2\\
+ &= ac + (ad + bc)\epsilon \\
 \begin{bmatrix}
 a & b \\
 0 & a \\
 \end{bmatrix}
-\end{align}
+\begin{bmatrix}
+c & d \\
+0 & c \\
+\end{bmatrix}
+&=
+\begin{bmatrix}
+ac & ad + bc \\
+0 & ac \\
+\end{bmatrix}
+\end{align*} \\
 $$
+
+
+##### Complex numbers
 
 $$
 \begin{align}
@@ -48,24 +76,7 @@ CNOT \equiv
 \end{align}
 $$
 
-### Memory
-
-[Holographic reduced representations](http://www2.fiit.stuba.sk/~kvasnicka/CognitiveScience/6.prednaska/plate.ieee95.pdf)
-
-
-
-### Type-systems
-
-Strongly typed …
-
-
-### Functions?
-
-
-
-### Differentiation
-
-WOWOWOW. A derivative is a linear transform. ?!?! Huh
+##### Differentiation
 
 In the space of polynomials.
 
@@ -81,6 +92,24 @@ In the space of polynomials.
 each column is the derivative of a 'basis' function, which in this case is each $x^n$.
 
 
+
+
+### Memory
+
+[Holographic reduced representations](http://www2.fiit.stuba.sk/~kvasnicka/CognitiveScience/6.prednaska/plate.ieee95.pdf)
+
+
+
+### Type-systems
+
+Strongly typed …
+
+
+### Functions?
+
+
+
+
 # Other ?
 
 ### What would we want them to do?
@@ -92,17 +121,13 @@ What would a non-linear and differentiable language for structure look like? Wha
 
 What alternatives are there to representing information that rival linear algebra?
 * Trees and recursion (which actually ties into linalg - H-Tucker decomposition -- see other post on SVD).
-* Graphs?
+* Graphs as adjacency matricies.
 * ???
 * Fields
 *
-
-What ways are there to represent structured info? (should make a separate post)
 
 
 # Thoughts
 
 Why is linear algebra such an effective language for thinking about and expressing structure in systems?
-
-
-### Resources
+What makes it so good? Is it really that great?

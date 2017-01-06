@@ -14,6 +14,10 @@ title: Axioms of linear algebra
 
 Translating this into something more interpretable?
 
-==??
-So these axioms are what allow matmul to work like it does?
-What if LinAlg wasnt associative, or commutative, or ... Find counter examples?!?
+***
+
+* What if LinAlg wasnt associative, or commutative
+* What if over a ring instead of a field. e.g.g an integral domain.
+
+
+Find counter examples?!?
