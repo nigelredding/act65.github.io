@@ -10,11 +10,8 @@ For each topic;
 
 Other potential topics;
 
-* learning.
-  * Types. Supervised, RL, Unsupervised...
-  * In practice. Curriculum, long term dependencies,
-  * Generalisation.
-  * Tradeoffs. Complexity measures of required resources. Time, memory, data, accuracy, robustness, parallelism, energy, ...
-* compression. AIT, AEs, dim reduction,
-* probability.
-*
+* learning
+* compression
+* probability
+* signals
+* representations and data structures

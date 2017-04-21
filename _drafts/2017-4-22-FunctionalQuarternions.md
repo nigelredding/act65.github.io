@@ -21,3 +21,6 @@ important types;
 * maps to same dimensionality
 * orthogonal transform
 * ?
+
+
+<!-- how could group theory come into this? symmetry, parameter sharing, ...? -->
