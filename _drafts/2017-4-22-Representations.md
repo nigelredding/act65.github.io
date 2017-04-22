@@ -13,7 +13,7 @@ category: notes
 - Test accuracy on unsupervised pretraining. (does it work as advertised?)
   - for classification, and segmentation and ??.
 - Tensorflow embedding visualsisations of each. (what are the observable differences/patterns)
-- 2d vector fields of input and output relations? 
+- 2d vector fields of input and output relations?
 - Math showing the differences
  -->
 
@@ -33,7 +33,8 @@ The discriminator will learn things about the bounaries of P(x), but not necesse
 
 [nat](https://arxiv.org/abs/1704.05310)
 
-
+http://www.inference.vc/unsupervised-learning-by-predicting-noise-an-information-maximization-view-2/
+https://papers.nips.cc/paper/2410-information-maximization-in-noisy-channels-a-variational-approach.pdf
 ## Siamese networks
 
 My version of siamese.
@@ -43,3 +44,11 @@ $$
 
 Want all x_is to be evenly spaced (thus they will be easily separable?!?).
 Will incur a higher loss for tightly packed (aka hard to separate) sets of x.
+
+
+***
+
+Optimising for ???
+* reconstruction
+* mutual information
+* ?
