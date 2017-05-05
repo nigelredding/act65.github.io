@@ -21,6 +21,7 @@ Intuitively A is a subset of B, but it is also possible to use c not in B to hel
 ### Unsupervised segmentation
 
 Relation to ICA and blind source separation?
+Difference between segmentation and separation?
 
 
 Related ideas/work.
