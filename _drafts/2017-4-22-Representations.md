@@ -50,6 +50,17 @@ $$
 \mathcal L = argmin_{\theta} argmin_{P} \parallel PCf_{\theta}(x)\parallel
 $$
 
+so optimising this is the same as optimising for maximum mutual information.
+thus we have a measure of the difference between a uniform distribution and the
+distribution of zs.
+but f is a deterministic mapping. so this is really just saying that we want
+uniform spacing? this makes more sense to interpret as a hash.
+mapping each x to a unique z such that the zs are evenly spaced and preseve the locality of xs.
+
+a locality sensitity represnetation should need a fully connected layer to make predictions.
+we should be able to classify based upon clusters?
+
+
 ## Siamese networks
 
 What about
@@ -59,6 +70,10 @@ $$
 
 Want all x_is to be evenly spaced (thus they will be easily separable?!?).
 Will incur a higher loss for tightly packed (aka hard to separate) sets of x.
+
+## Clustering
+
+?!? Nearest neightbors? k-means?
 
 
 ##

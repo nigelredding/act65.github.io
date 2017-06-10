@@ -52,6 +52,7 @@ min_g,params = recursive_optimiser(g,params,3)
 * How is this related to data points and gradients evaluated at a point?
 * The point is that it optimises a function as well as itself (to optimise the function faster).
 * What does depth mean here? I get what depth two means, optimise the optimiser. But what does more depth do?
+* What relation is there to higher order moments or second order methods?
 
 ### Verson 0.2
 
