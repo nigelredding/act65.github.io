@@ -13,6 +13,7 @@ title: Axioms of linear algebra
 * Identity element of scalar multiplication
 
 Translating this into something more interpretable?
+Play with subtle changes and try to understand why these axioms are __the__ axioms.
 
 ***
 

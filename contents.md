@@ -61,15 +61,6 @@ I want to write some summaries for a couple of reasons.
 * It helps me focus (which I struggle with).
 
 
-### Process
-
-* What is the problem setting?
-* What problem did they solve?
-* How did they do it?
-* Why is it important?
-* Where is it going? (how does it fit into future research directions?)
-* What problems to they sweep under the rug?
-
 <div class="posts">
   {% for post in site.posts %}
     {% if post.category contains "summary" %}

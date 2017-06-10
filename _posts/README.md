@@ -10,8 +10,6 @@ For each topic;
 
 Other potential topics;
 
-* learning
-* compression
-* probability
-* signals
-* representations and data structures
+* learning. (generalisation)
+* probability and stats. ()
+* signals. (info theory and fourier/wavelets)
