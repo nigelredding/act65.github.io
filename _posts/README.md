@@ -13,3 +13,6 @@ Other potential topics;
 * learning. (generalisation)
 * probability and stats. ()
 * signals. (info theory and fourier/wavelets)
+* probability
+* memory
+* data structures, representations, ...

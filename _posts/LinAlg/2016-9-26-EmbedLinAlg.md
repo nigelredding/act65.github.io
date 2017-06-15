@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Embedding into linear algebra
+category: extra
 ---
 
 Linear algebra is a powerful language that can embed other more interesting languages/systems/grammars/...? For example, computation, dual numbers, holographic representations, ???
