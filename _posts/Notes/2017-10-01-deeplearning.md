@@ -8,5 +8,7 @@ title: Recursive optimisation
 <script src="https://gist.github.com/act65/9206f0b58f8f401db053504f6324cd17"> </script>
 
 
+{% raw %}
+<iframe src-"https://nbviewer.jupyter.org/gist/act65/9206f0b58f8f401db053504f6324cd17"> </iframe>
+{% endraw %}
 
-<iframe src-"https://nbviewer.jupyter.org/gist/act65/9206f0b58f8f401db053504f6324cd17"> w </iframe>
