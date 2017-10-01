@@ -9,6 +9,6 @@ title: Recursive optimisation
 
 
 {% raw %}
-<iframe src-"https://nbviewer.jupyter.org/gist/act65/9206f0b58f8f401db053504f6324cd17"> </iframe>
+<iframe src="https://nbviewer.jupyter.org/gist/act65/9206f0b58f8f401db053504f6324cd17"> </iframe>
 {% endraw %}
 
