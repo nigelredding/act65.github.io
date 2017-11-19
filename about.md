@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-My name is Alex. I want to be smart(er).
+My name is Alex. I want to be smart.
 
 This place for me to put the things I want other people to see. For the things I don’t want people to see, check out this [blog](https://act65com.wordpress.com/). Which is less technical, less polished, more opinionated, and more personal.
 
