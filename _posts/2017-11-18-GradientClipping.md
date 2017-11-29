@@ -1,8 +1,10 @@
 ---
 layout: post
-title: Gradient clipping for better generalisation
+title: first post testing
 ---
 
+$X=Y^2$ yada yada
+$$X=Y^2$$
 > General features are learned first/faster because the intra (and inter) batch examples positively interfere along their shared (aka general) features and negatively interfere along the features specific to one/a subset of the examples.
 
 <side>Need to empirically validate, and possibly prove?</side>
