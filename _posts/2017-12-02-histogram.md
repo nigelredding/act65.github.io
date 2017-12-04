@@ -28,8 +28,23 @@ the counter by ```1```. If the hash is less than the root hash, insert on the le
 increase ```count``` by one. If it's greater, insert on the right. Repeat recusively.
 
 Then we've got our book in our tree. $O(n)$ bits of space were used. How long did it take to insert
-each item? Because of the uniformity of our hash values, we can see that
+each item? We'll set up some machinery to solve this problem. 
+
+## Random Binary trees
+
+Suppose $S=\\{0,1,\ldots,n-1\\}$. For each permutation $\pi$ of $S$
+there is an $n$-tuple $S_\pi = (\pi(0), \pi(1), \ldots, \pi(n-1))$. 
+There is also a corresponding binary tree $T_\pi$, which is the binary tree formed by inserting all the entries in the order of $S_\pi$. Clearly different permutations can correspond to the same binary tree.
+
+Fix some $x \in S$. For each $i \in S \setminus \{x\}$, we can let $I_i$ be the random variable given by \\[ I_i(\mu)  = 
+\begin{cases} 1 & \text{if $i$ appears in the search path for $x$ in $T_\mu$ \\ 0 & \text{otherwise} \end{cases} \\]
+
+
+
+Because of the uniformity of our hash values, we can see that
 the expected depth of any given node is $O(\log n)$ and
 hence it takes an expected $O(n \log n)$ to insert all the words.
 
-Forget about the book for a second and just consider its set of unique words $S=\{s_1,\ldots,s_m\}$. We still have $n$ words in total, just $m \leq n$ unique words. For each permutation $\pi$ of $S$, there is a tuple \\[ S_\pi = (s_{\pi(1)}, \ldots, s_{\pi(m)}). \\] This tuple $S_\pi$ corresponds to a resulting tree $T_\pi$, where $s_{\pi(1)}, \ldots, s_{\pi(n)\}$ are inserted in order. Different permutations can correspond to the same tree. 
+Forget about the book for a second and just consider its set of unique words $S=\{s_1,\ldots,s_m\}$. We still have $n$ words in total, just $m \leq n$ unique words. For each permutation $\pi$ of $S$, there is a tuple \\[ S_\pi = (s_{\pi(1)}, \ldots, s_{\pi(m)}). \\] This tuple $S_\pi$ corresponds to a resulting tree $T_\pi$, where $s_{\pi(1)}, \ldots, s_{\pi(n)\}$ are inserted in order. Different permutations can correspond to the same tree.
+
+Suppose our book corresponds to a permutation $\pi$, and we've inserted our book into the tree. Then we have a tree $T_\pi$. We want to calculate the expected value of any given node. Fix a given item $x \in S$.   
