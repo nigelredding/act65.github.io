@@ -58,10 +58,13 @@ E[L_x] = \sum\limits_{i=1}^{x-1} E[I_i] + \sum\limits_{j=x+1}^n E[I_j]
 
 Now we figure out what each of the summands is. 
 
-First, suppose $1 \leq i \leq x-1$. Then 
+**First suppose $1 \leq i \leq x-1$**. Then 
 \\[
 E[I_i] = 0 \cdot P(I_i = 0) + 1 \cdot P(I_i = 1) = P(I_i = 1)
 \\]
+
+What is P(I_i = 1)? Well, look at the set $[i,x] = \{i,i+1,\ldots,x\}$. 
+Under what conditions will $i$ be an ancestor of $x$?
 
 Because of the uniformity of our hash values, we can see that
 the expected depth of any given node is $O(\log n)$ and
