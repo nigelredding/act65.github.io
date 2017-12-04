@@ -60,7 +60,7 @@ Now we figure out what each of the summands is.
 
 First, suppose $1 \leq i \leq x-1$. Then 
 \\[
-E[I_i] = 0 \cdot P(I_i = 0) + 1 1 \cdot \cdot P(I_i = 1) = P(I_i = 1)
+E[I_i] = 0 \cdot P(I_i = 0) + 1 \cdot P(I_i = 1) = P(I_i = 1)
 \\]
 
 Because of the uniformity of our hash values, we can see that
