@@ -32,20 +32,30 @@ each item? We'll set up some machinery to solve this problem. In the end we show
 
 ## Random Binary trees
 
-Suppose $S=\\{0,1,\ldots,n-1\\}$. For each permutation $\pi$ of $S$
-there is an $n$-tuple $S_\pi = (\pi(0), \pi(1), \ldots, \pi(n-1))$. 
+Suppose $S=\\{1,2,\ldots,n\\}$. For each permutation $\pi$ of $S$
+there is an $n$-tuple $S_\pi = (\pi(1), \pi(2), \ldots, \pi(n))$. 
 There is also a corresponding binary tree $T_\pi$, which is the binary tree formed by inserting all the entries in the order of $S_\pi$. Clearly different permutations can correspond to the same binary tree.
 
 Fix some $x \in S$. For each $i \in S \setminus \{x\}$, we can let $I_i$ be the random variable given by
-\\[ 
+$$ 
 I_i(\mu)  =
 \begin{cases} 
 	1 & \text{if $i$ appears in the search path for $x$ in $T_\mu$} \\ 
 	0 & \text{otherwise} 
 \end{cases} 
-\\]
+$$
 
-Then we have a function $L_i$ which counts how many 
+Then we have a random variable $L_x$ which gives the length of the search path
+from the root to $x$, which is given by
+\[
+L_x(\sigma) = \sum\limits_{i \in \{1,2,\ldots,n\} \setminus \{x\}} I_i
+\] 
+
+By the linearity of expectations, we get 
+\[
+E[L_x] = \sum\limits_{i=0}^{x-1} E[I_i] + \sum\limits_{j=x+1}^n E[I_j]
+\]
+
 
 
 Because of the uniformity of our hash values, we can see that
