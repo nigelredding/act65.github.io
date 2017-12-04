@@ -28,7 +28,7 @@ the counter by ```1```. If the hash is less than the root hash, insert on the le
 increase ```count``` by one. If it's greater, insert on the right. Repeat recusively.
 
 Then we've got our book in our tree. $O(n)$ bits of space were used. How long did it take to insert
-each item? We'll set up some machinery to solve this problem. 
+each item? We'll set up some machinery to solve this problem. In the end we show that after the insertion of the entire book, the expected depth is $O(\log n)$. From this we conclude that inserting all elements of the book takes $O(n \log n)$ expected running time. 
 
 ## Random Binary trees
 
@@ -45,14 +45,7 @@ I_i(\mu)  =
 \end{cases} 
 $$
 
-$$
-I_i(\mu) = \left\{
-        \begin{array}{ll}
-            1 & \text{if $i$ appears in the search path for $x$ in $T_\mu$} \\
-            0 & \text{otherwise}
-        \end{array}
-    \right.
-$$
+Then we have a function $L_i$ which counts how many 
 
 
 Because of the uniformity of our hash values, we can see that
