@@ -53,10 +53,15 @@ L_x(\sigma) = \sum\limits_{i \in \\{1,2,\ldots,n\\} \setminus \\{x\\}} I_i
 
 By the linearity of expectations, we get 
 \\[
-E[L_x] = \sum\limits_{i=0}^{x-1} E[I_i] + \sum\limits_{j=x+1}^n E[I_j]
+E[L_x] = \sum\limits_{i=1}^{x-1} E[I_i] + \sum\limits_{j=x+1}^n E[I_j]
 \\]
 
+Now we figure out what each of the summands is. 
 
+First, suppose $1 \leq i \leq x-1$. Then 
+\\[
+E[I_i] = 0 \cdot P(I_i = 0) + 1 1 \cdot \cdot P(I_i = 1) = P(I_i = 1)
+\\]
 
 Because of the uniformity of our hash values, we can see that
 the expected depth of any given node is $O(\log n)$ and
