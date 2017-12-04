@@ -18,6 +18,11 @@ type Tree struct {
 }
 ```
 When we create a node, we set ``word`` to the word we want, ```hashval``` to the the hash
-of the word, and ```count``` to ```1```.
+of the word, and ```count``` to ```1```. We call the first three items of the struct
+the "word data".
 
- 
+We start by putting the word data of the first word of the book in a root node.
+Then, we iterate through every word of the book. We insert into the binary tree in the usual
+way with respect to ```hashval```, except that if we hit a hash of the same value, we increase
+the counter by ```1```. If the hash is less than the root hash, insert on the left. If they are equal,
+increase ```count``` by one. If it's greater, insert on the right. Repeat recusively.
