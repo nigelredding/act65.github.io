@@ -67,6 +67,6 @@ Because of the uniformity of our hash values, we can see that
 the expected depth of any given node is $O(\log n)$ and
 hence it takes an expected $O(n \log n)$ to insert all the words.
 
-Forget about the book for a second and just consider its set of unique words $S=\{s_1,\ldots,s_m\}$. We still have $n$ words in total, just $m \leq n$ unique words. For each permutation $\pi$ of $S$, there is a tuple \\[ S_\pi = (s_{\pi(1)}, \ldots, s_{\pi(m)}). \\] This tuple $S_\pi$ corresponds to a resulting tree $T_\pi$, where $s_{\pi(1)}, \ldots, s_{\pi(n)\}$ are inserted in order. Different permutations can correspond to the same tree.
+Forget about the book for a second and just consider its set of unique words $S=\\{s_1,\ldots,s_m\\}$. We still have $n$ words in total, just $m \leq n$ unique words. For each permutation $\pi$ of $S$, there is a tuple \\[ S_\pi = (s_{\pi(1)}, \ldots, s_{\pi(m)}). \\] This tuple $S_\pi$ corresponds to a resulting tree $T_\pi$, where $s_{\pi(1)}, \ldots, s_{\pi(n)\}$ are inserted in order. Different permutations can correspond to the same tree.
 
 Suppose our book corresponds to a permutation $\pi$, and we've inserted our book into the tree. Then we have a tree $T_\pi$. We want to calculate the expected value of any given node. Fix a given item $x \in S$.   
