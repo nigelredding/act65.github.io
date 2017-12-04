@@ -45,6 +45,14 @@ I_i(\mu)  =
 \end{cases} 
 \\]
 
+$$
+f(x) = \left\{
+        \begin{array}{ll}
+            -x & \quad x \leq 0 \\
+            x & \quad x > 0
+        \end{array}
+    \right.
+$$
 
 
 Because of the uniformity of our hash values, we can see that
