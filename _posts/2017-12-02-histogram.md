@@ -46,7 +46,7 @@ I_i(\mu)  =
 $$
 
 $$
-f(x) = \left\{
+I_i(\mu) = \left\{
         \begin{array}{ll}
             1 & \text{if $i$ appears in the search path for $x$ in $T_\mu$} \\
             0 & \text{otherwise}
