@@ -48,7 +48,7 @@ $$
 Then we have a random variable $L_x$ which gives the length of the search path
 from the root to $x$, which is given by
 \\[
-L_x(\sigma) = \sum\limits_{i \in \{1,2,\ldots,n\} \setminus \{x\}} I_i
+L_x(\sigma) = \sum\limits_{i \in \\{1,2,\ldots,n\\} \setminus \\{x\\}} I_i
 \\] 
 
 By the linearity of expectations, we get 
