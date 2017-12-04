@@ -31,3 +31,5 @@ Then we've got our book in our tree. $O(n)$ bits of space were used. How long di
 each item? Because of the uniformity of our hash values, we can see that
 the expected depth of any given node is $O(\log n)$ and
 hence it takes an expected $O(n \log n)$ to insert all the words.
+
+Consider the problem this way. Let $S = \{s_1,\ldots,s_n\}$ be a set of the unique words in our book. For each permutation $\pi$ of $S$, there is a tuple \\[ S_\pi = (s_{\pi(1)}, \ldots, s_{\pi(n)}). ]\\ 
