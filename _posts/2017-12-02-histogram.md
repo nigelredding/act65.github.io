@@ -37,10 +37,13 @@ there is an $n$-tuple $S_\pi = (\pi(0), \pi(1), \ldots, \pi(n-1))$.
 There is also a corresponding binary tree $T_\pi$, which is the binary tree formed by inserting all the entries in the order of $S_\pi$. Clearly different permutations can correspond to the same binary tree.
 
 Fix some $x \in S$. For each $i \in S \setminus \{x\}$, we can let $I_i$ be the random variable given by
-\\[ I_i(\mu)  =
-\begin{cases} 1 & \text{if $i$ appears in the search path for $x$ in $T_\mu$} \\ 
-0 & \text{otherwise} 
-\end{cases} \\]
+\\[ 
+I_i(\mu)  =
+\begin{cases} 
+	1 & \text{if $i$ appears in the search path for $x$ in $T_\mu$} \\ 
+	0 & \text{otherwise} 
+\end{cases} 
+\\]
 
 
 
