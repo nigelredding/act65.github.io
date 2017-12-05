@@ -131,13 +131,13 @@ placed in, ```index1 = h(x)``` or its alternate location
 succeed, we return true.
 
 \item If neither suceeed, we pick index1 or index2 at random, and assign it to
-i. Then, for a certain number of steps (\texttt{maxKicks = 500} in our reference)
+i. Then, for a certain number of steps (```maxKicks = 500``` in our reference)
 we do the following.
 
 \item Swap our fingerprint fprint with a random entry in bucket[i]. Find
 its alternate location, and try to put it in there. If you fail, repeat with another
-fingerprint in buckets[i]. Repeat this step until we either return \texttt{true}
-or we go through \texttt{maxKicks} steps.
+fingerprint in buckets[i]. Repeat this step until we either return ```true```
+or we go through ```maxKicks``` steps.
 \end{enumerate}
 
 The ```Lookup``` and ```Delete``` operations are short and easy to understand, so
