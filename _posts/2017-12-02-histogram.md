@@ -84,4 +84,9 @@ So by our inequality
 
 \\[
 
-\ln(x) + \ln(n-x+1) -2 \leq E[L_x] 
+\ln(x) + \ln(n-x+1) -2 \leq E[L_x] \leq 2\log(n)
+
+\\]
+
+## The program, again
+ 
