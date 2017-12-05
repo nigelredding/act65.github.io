@@ -75,7 +75,7 @@ $$
 $$
 
 Recall that the sum $H_k := \sum_0^k i$ is called the $k$-th *Harmonic number*. By computing upper
-and lower Reimann sums, we can show 
+and lower Reimann sums of the integral $\int dx/x = \ln(x)$, we can show 
 that for any $k>0$, we have
 
 \\[
