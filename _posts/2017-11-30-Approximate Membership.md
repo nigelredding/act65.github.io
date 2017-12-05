@@ -133,7 +133,7 @@ succeed, we return true.
 i. Then, for a certain number of steps (```maxKicks = 500``` in our reference)
 we do the following.
 
-* Swap our fingerprint fprint with a random entry in bucket[i]. Find
+* Swap our fingerprint fprint with a random entry in ```bucket[i]```. Find
 its alternate location, and try to put it in there. If you fail, repeat with another
 fingerprint in ```buckets[i]```. Repeat this step until we either return ```true```
 or we go through ```maxKicks``` steps.
