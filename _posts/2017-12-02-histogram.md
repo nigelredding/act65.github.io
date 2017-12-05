@@ -31,7 +31,7 @@ gives the same binary tree (in shape) as inserting some specific permutation of 
 
 ## Random Binary trees
 
-Suppose $S=\\{1,2,\ldots,n\\}$. For each permutation $\pi$ of $S$ there is an $n$-tuple $S_\pi = (\pi(1), \pi(2), \ldots, \pi(n))$. There is also a corresponding binary tree $T_\pi$, which is the binary tree formed by inserting all the entries in the order of $S_\pi$. Clearly different permutations can correspond to the same binary tree.
+Suppose $S=\\{1,2,\ldots,n\\}$. For each permutation $\sigma$ of $S$ there is an $n$-tuple $S_\sigma = (\sigma(1), \sigma(2), \ldots, \sigma(n))$. There is also a corresponding binary tree $T_\sigma$, which is the binary tree formed by inserting all the entries in the order of $S_\sigma$. Clearly different permutations can correspond to the same binary tree.
 Our goal is to show that the expected depth of any tree is $O(\log n)$. We use [this paper](http://opendatastructures.org/versions/edition-0.1d/ods-java/node40.html)
 as a reference
 
@@ -46,7 +46,7 @@ I_i(\sigma)  =
 $$
 
 What is the probability that $I_i=1$? In other words, what is the probability that
-$i$ is on the search path of $x$? We could use a counting argument (**haven't tried it yet, do this**), but instead we'll
+$i$ is on the search path of $x$? We could use a counting argument (**todo: try this**), but instead we'll
 use a trick from [here](http://opendatastructures.org/versions/edition-0.1d/ods-java/node40.html).
 First suppose $1 \leq i < x$. Let $[i,x]$ denote the intererval $\\{i,i+1,\ldots,x\\}$. 
 A moment of thought will reveal that $I_i=1$ if and only if $i$ is the first element from $[i,x]$
