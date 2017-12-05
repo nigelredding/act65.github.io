@@ -6,7 +6,7 @@ NB: This is a draft.
     See https://github.com/nigelredding/histogram for the code.
     Should be finished by Dec 10.
 
-Suppose you have a book (with $n$ words total, not the unique count), and you want to make a histogram counting the frequencies of each word. If we allow a very small chance of failure, we can do this using $O(n)$ bits of memory and $O(n \log n)$ running time.
+Suppose you have a book (with $n$ words total, not the unique count), and you want to make a histogram counting the frequencies of each word. If we allow a very small chance of failure, we can do this using $O(n)$ bits of memory and $O(n \log n)$ expected running time. We just use an ordinary binary tree. We explain why we don't need self-balancing techniques.
 
 Let $h$ be a $p=64$ bit hash function. Create a tree where each node is given by
 ```go
@@ -22,7 +22,7 @@ When we create a node, we set ``word`` to the word we want, ```hashval``` to the
 
 We start by putting the word data of the first word of the book in a root node. Then, we iterate through every word of the book. We insert into the binary tree in the usual way with respect to ```hashval```, except that if we hit a hash of the same value, we increase the counter by ```1```. If the hash is less than the root hash, insert on the left. If they are equal, increase ```count``` by one. If it's greater, insert on the right. Repeat recusively.
 
-Then we've got our book in our tree. $O(n)$ bits of space were used. How long did it take to insert each item? We'll set up some machinery to solve this problem. In the end we show that after the insertion of the entire book, the expected depth is $O(\log n)$. From this we conclude that inserting all elements of the book takes $O(n \log n)$ expected running time.
+Then we've got our book in our tree. $O(n)$ bits of space were used. How long did it take to insert each item? We'll set up some machinery to solve this problem. In the end we show that after the insertion of the entire book, the *expected* depth is $O(\log n)$. From this we conclude that inserting all elements of the book takes $O(n \log n)$ expected running time.
 
 For the sake of discussing memory and running time, we can assume the all the words are unique. Repetitions do not change the shape of the resulting tree,
 and multiple elements are only stored once. We can further assume that if there are $n$ unique words, then inserting the book (in its order)
@@ -66,7 +66,7 @@ we have $E[I_i] = P(I_i=1)$.
 
 Then we have a random variable $L_x$ which gives the length of the search path from the root to $x$, which is given by
 \\[
-L_x(\sigma) = \sum\limits_{i \in \\{1,2,\ldots,n\\} \setminus \\{x\\}} I_i
+L_x(\sigma) = \sum\limits_{i \in \\{1,2,\ldots,n\\} \setminus \\{x\\}} I_i(\sigma)
 \\]
 
 By the linearity of expectations, we get
