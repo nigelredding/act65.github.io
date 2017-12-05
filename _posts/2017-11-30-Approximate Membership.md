@@ -72,15 +72,15 @@ on how to chose your $k$ hash functions.
 
 ## Cuckoo Filters
 
-Bloom filters provide $O(1)$ \texttt{Insert} and $O(1)$ \texttt{Lookup}, but they
+Bloom filters provide $O(1)$ ```Insert``` and $O(1)$ ```Lookup```, but they
 do not support deletion. We describe another data structure, which provides
-(amortized) $O(1)$ \texttt{Insert}, \texttt{Lookup} and \texttt{Delete}. We
+(amortized) $O(1)$ ```Insert```, ```Lookup``` and ```Delete```. We
 follow \href{https://www.cs.cmu.edu/~dga/papers/cuckoo-conext2014.pdf}{this paper}.
 A Cuckoo Filter $F$ consists of an array of $m$ buckets, where each bucket holds
 $b$ \emph{fingerprints} (explained later) of length $f$ bits. We insert $n$ items into $F$.
 $F$ is equipped with a hash function $h$ which maps $U$ into $\{0,1,\ldots,m\}$.\\
 
-We go trough the implementation of the operations \texttt{Insert,Lookup} and \texttt{Delete}.\\
+We go through the implementation of the operations ```Insert,Lookup``` and ```Delete```.\\
 
 For each item $x \in U$, there is a hash $h(x)$ (let's say it's a 32 bit integer)
 and a fingerprint, which is assigned to be the lowest $f$ bytes of $h(x)$ \footnote{In my
@@ -88,9 +88,10 @@ implementation, we take $f=8$ (constant), which makes it impossible to implement
 Cuckoo Filter in many cases. This will be fixed later.} To insert $x$ into $F$, we insert
 its fingerprint $f(x)$. We do this as follows.\\
 
-\texttt{Insert(x)} returns \texttt{true} if $x$ was inserted correctly, and \texttt{false}
+```Insert(x)``` returns ```true``` if $x$ was inserted correctly, and ```false```.
 otherwise.
-\begin{minted}{go}
+
+```python
 Insert(x) {
 	index1 := h(x)
 	fprint := first p bits of h(x)
@@ -116,15 +117,15 @@ Insert(x) {
 		}
 	}
 }
-\end{minted}
+```
 
 Let's step through this line by line.
 
 \begin{enumerate}
 \item When we insert $x$, there are two locations in can be
-placed in, \texttt{index1 = h(x)} or its alternate location
-\texttt{index2 = index1 $^\wedge$ h(fprint)}. We can recover \texttt{index1} from
-\texttt{index2} by \texttt{index1 = index2 $^\wedge$ \textasciitilde h(fprint)}.
+placed in, ```index1 = h(x)``` or its alternate location
+```index2 = index1 $^\wedge$ h(fprint)}```. We can recover ```index1``` from
+```index2``` by ```index1 = index2 $^\wedge$ \textasciitilde h(fprint)```
 
 \item Following this, we attempt to add into the bucket at index1 and index2. If either
 succeed, we return true.
