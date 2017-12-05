@@ -3,6 +3,8 @@ layout: post
 title: Approximate membership problem
 ---
 
+NB: This is a draft. The code is [here](https://github.com/nigelredding/fprint_dict), [here](https://github.com/nigelredding/Bloom) and [here](...).
+
 In this post we discuss the *approximate membership problem*. That is, let $S = \\{s_1,\ldots,s_m\\}$ be a subset of some larger set $U$. Suppose
 $m$ is really big, e.g. $S$ is the set of words from an English dictionary. Let $x \in U$.
 We want to answer ``is $x \in S$?'' reasonably efficiently.
