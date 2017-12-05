@@ -1,0 +1,30 @@
+\documentclass[12pt]{amsart}
+\usepackage{/home/nigel/Dropbox/mystyle}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+
+\title{title here}
+\author{Nigel Redding}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+
+\begin{tikzpicture}
+	\node[circle,draw](z){$z$}
+		child{node {$\ldots$}
+		      child{node {$i$}}
+		      child[missing] %child{node {rleft}}
+		}
+		child{node {right}
+		      child{node {lright}}
+		      child {node {rright}}
+		};
+\end{tikzpicture}
+
+\end{document}
+
