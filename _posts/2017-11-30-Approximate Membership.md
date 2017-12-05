@@ -121,24 +121,22 @@ Insert(x) {
 
 Let's step through this line by line.
 
-\begin{enumerate}
-\item When we insert $x$, there are two locations in can be
+* When we insert $x$, there are two locations in can be
 placed in, ```index1 = h(x)``` or its alternate location
 ```index2 = index1 XOR h(fprint)}```. We can recover ```index1``` from
 ```index2``` by ```index1 = index2 XOR \textasciitilde h(fprint)```
 
-\item Following this, we attempt to add into the bucket at index1 and index2. If either
+* Following this, we attempt to add into the bucket at index1 and index2. If either
 succeed, we return true.
 
-\item If neither suceeed, we pick index1 or index2 at random, and assign it to
+* If neither suceeed, we pick index1 or index2 at random, and assign it to
 i. Then, for a certain number of steps (```maxKicks = 500``` in our reference)
 we do the following.
 
-\item Swap our fingerprint fprint with a random entry in bucket[i]. Find
+* Swap our fingerprint fprint with a random entry in bucket[i]. Find
 its alternate location, and try to put it in there. If you fail, repeat with another
-fingerprint in buckets[i]. Repeat this step until we either return ```true```
+fingerprint in ```buckets[i]```. Repeat this step until we either return ```true```
 or we go through ```maxKicks``` steps.
-\end{enumerate}
 
 The ```Lookup``` and ```Delete``` operations are short and easy to understand, so
 I refer the reader to page 5 of [this paper](https://www.cs.cmu.edu/~dga/papers/cuckoo-conext2014.pdf).
