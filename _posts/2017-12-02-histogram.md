@@ -2,6 +2,8 @@
 layout: post
 title: Random binary trees and histograms
 ---
+NB: This is a draft.
+    See https://github.com/nigelredding/histogram for the code.
 
 Suppose you have a book (with $n$ words total, not the unique count), and you want to make a histogram counting the frequencies of each word. If we allow a very small chance of failure, we can do this using $O(n)$ bits of memory and $O(n \log n)$ running time.
 
@@ -20,6 +22,11 @@ When we create a node, we set ``word`` to the word we want, ```hashval``` to the
 We start by putting the word data of the first word of the book in a root node. Then, we iterate through every word of the book. We insert into the binary tree in the usual way with respect to ```hashval```, except that if we hit a hash of the same value, we increase the counter by ```1```. If the hash is less than the root hash, insert on the left. If they are equal, increase ```count``` by one. If it's greater, insert on the right. Repeat recusively.
 
 Then we've got our book in our tree. $O(n)$ bits of space were used. How long did it take to insert each item? We'll set up some machinery to solve this problem. In the end we show that after the insertion of the entire book, the expected depth is $O(\log n)$. From this we conclude that inserting all elements of the book takes $O(n \log n)$ expected running time.
+
+For the sake of discussing memory and running time, we can assume the all the words are unique. Repetitions do not change the shape of the resulting tree,
+and multiple elements are only stored once. We can further assume that if there are $n$ unique words, then inserting the book (in its order)
+gives the same binary tree (in shape) as inserting some specific permutation of $\{1,2,\ldots,n\}$. We discuss this below. 
+
 
 ## Random Binary trees
 
