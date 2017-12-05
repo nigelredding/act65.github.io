@@ -94,7 +94,7 @@ So by our inequality
 \\]
 
 ## The program, again
-So we've shown that the inserting all elements has an expected running time of $O(\log n)$. 
+So we've shown that the inserting all words in a book has an expected running time of $O(n \log n)$. 
 So, if the data is uniformly distributed, we don't need any other techniques (like
 self-ballancing trees) to insert the data efficiently.
 
