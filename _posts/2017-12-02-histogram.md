@@ -71,7 +71,7 @@ and lower Reimann sums, we can show
 that for any $k>0$, we have
 
 \\[
-\ln k \leq H_k \leq \ln k + 1
+	\ln k \leq H_k \leq \ln k + 1
 \\]
 
 Rewriting our sum, we get 
@@ -83,10 +83,40 @@ Rewriting our sum, we get
 So by our inequality
 
 \\[
-
-\ln(x) + \ln(n-x+1) -2 \leq E[L_x] \leq 2\log(n)
-
+	\ln(x) + \ln(n-x+1) -2 \leq E[L_x] \leq 2\ln(n)
 \\]
 
 ## The program, again
- 
+So we've shown that the inserting all elements has an expected running time of $O(\log n)$. 
+So, if the data is uniformly distributed, we don't need any other techniques (like
+self-ballancing trees) to insert the data efficiently.
+
+Let's try our program out:
+
+```bash
+go run histogram.go leviathan.txt out.txt
+```
+
+which gives us a histogram
+```bash 
+the 15144
+of 10986
+hobbes 15
+produced 14
+white 5
+where 334
+perhaps 33
+hindreth 1
+instant 2
+reconning 1
+experiment 1
+agenor 1
+infinitive 1
+covetousness 1
+ordeyned 1
+anxiety 4
+infinitely 1
+.
+.
+.
+```
