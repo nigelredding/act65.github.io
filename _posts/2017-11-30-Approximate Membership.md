@@ -124,8 +124,8 @@ Let's step through this line by line.
 \begin{enumerate}
 \item When we insert $x$, there are two locations in can be
 placed in, ```index1 = h(x)``` or its alternate location
-```index2 = index1 $^\wedge$ h(fprint)}```. We can recover ```index1``` from
-```index2``` by ```index1 = index2 $^\wedge$ \textasciitilde h(fprint)```
+```index2 = index1 XOR h(fprint)}```. We can recover ```index1``` from
+```index2``` by ```index1 = index2 XOR \textasciitilde h(fprint)```
 
 \item Following this, we attempt to add into the bucket at index1 and index2. If either
 succeed, we return true.
