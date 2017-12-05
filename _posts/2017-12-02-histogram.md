@@ -47,7 +47,7 @@ The similar argument shows that if $x < i \leq n$ then $P(I_i=1)=(i-x+1)^{-1}$. 
 $$
 P(I_i=1) =
 \begin{cases}
-        (x-i+1)^{-1} & \text{if } $1 \leq i < x$ \\
+        (x-i+1)^{-1} & \text{if } 1 \leq i < x \\
         (i-x+1)^{-1} & \text{otherwise}
 \end{cases}
 $$
@@ -66,8 +66,22 @@ $$
 	E[L_x] = \sum\limits_{i=1}^{x-1} E[I_i] + \sum\limits_{j=x+1}^n E[I_j]
 $$
 
-Because of the uniformity of our hash values, we can see that the expected depth of any given node is $O(\log n)$ and hence it takes an expected $O(n \log n)$ to insert all the words.
+Recall that the sum $H_k := \sum_0^k i$ is called the $k$-th *Harmonic number*. By computing upper
+and lower Reimann sums, we can show 
+that for any $k>0$, we have
 
-Forget about the book for a second and just consider its set of unique words $S=\\{s_1,\ldots,s_m\\}$. We still have $n$ words in total, just $m \leq n$ unique words. For each permutation $\pi$ of $S$, there is a tuple \\[ S_\pi = (s_{\pi(1)}, \ldots, s_{\pi(m)}). \\] This tuple $S_\pi$ corresponds to a resulting tree $T_\pi$, where $s_{\pi(1)}, \ldots, s_{\pi(n)\}$ are inserted in order. Different permutations can correspond to the same tree.
+\\[
+\ln k \leq H_k \leq \ln k + 1
+\\]
 
-Suppose our book corresponds to a permutation $\pi$, and we've inserted our book into the tree. Then we have a tree $T_\pi$. We want to calculate the expected value of any given node. Fix a given item $x \in S$.   
+Rewriting our sum, we get 
+
+\\[
+	E[L_x] = H_x + H_{n-x+1}-2
+\\]
+
+So by our inequality
+
+\\[
+
+\ln(x) + \ln(n-x+1) -2 \leq E[L_x] 
