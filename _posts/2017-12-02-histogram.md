@@ -26,6 +26,7 @@ Then we've got our book in our tree. $O(n)$ bits of space were used. How long di
 Suppose $S=\\{1,2,\ldots,n\\}$. For each permutation $\pi$ of $S$ there is an $n$-tuple $S_\pi = (\pi(1), \pi(2), \ldots, \pi(n))$. There is also a corresponding binary tree $T_\pi$, which is the binary tree formed by inserting all the entries in the order of $S_\pi$. Clearly different permutations can correspond to the same binary tree.
 
 Fix some $x \in S$. For each $i \in S \setminus \{x\}$, we can let $I_i$ be the random variable given by
+
 $$
 I_i(\sigma)  =
 \begin{cases}
@@ -34,8 +35,13 @@ I_i(\sigma)  =
 \end{cases}
 $$
 
-What is the probability that $I_i=1$? We could use a counting argument (**haven't tried it yet, do this**), but instead we'll
+What is the probability that $I_i=1$? In other words, what is the probability that
+$i$ is on the search path of $x$? We could use a counting argument (**haven't tried it yet, do this**), but instead we'll
 use a trick from [here](http://opendatastructures.org/versions/edition-0.1d/ods-java/node40.html).
+First suppose $1 \leq i \leq x$. Let $[i,x]$ denote the intererval $\\{i,i+1,\ldots,x\\}$. 
+A moment of thought will reveal that $I_i=1$ if and only if $i$ is the first element from $[i,x]$
+to be inserted. Each element from $[i,x]$ has an equal chance of $(x-i+1)^{-1}$ of being inserted first. So $P(I_i=1)=(x-i+1)^{-1}$.
+The same argument shows that if $x \leq i \leq n$ then 
 
 Then we have a random variable $L_x$ which gives the length of the search path from the root to $x$, which is given by
 \\[
