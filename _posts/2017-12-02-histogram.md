@@ -24,6 +24,7 @@ Then we've got our book in our tree. $O(n)$ bits of space were used. How long di
 ## Random Binary trees
 
 Suppose $S=\\{1,2,\ldots,n\\}$. For each permutation $\pi$ of $S$ there is an $n$-tuple $S_\pi = (\pi(1), \pi(2), \ldots, \pi(n))$. There is also a corresponding binary tree $T_\pi$, which is the binary tree formed by inserting all the entries in the order of $S_\pi$. Clearly different permutations can correspond to the same binary tree.
+Our goal is to show that the expected depth of any tree is $O(\log n)$.
 
 Fix some $x \in S$. For each $i \in S \setminus \{x\}$, we can let $I_i$ be the random variable given by
 
@@ -38,10 +39,21 @@ $$
 What is the probability that $I_i=1$? In other words, what is the probability that
 $i$ is on the search path of $x$? We could use a counting argument (**haven't tried it yet, do this**), but instead we'll
 use a trick from [here](http://opendatastructures.org/versions/edition-0.1d/ods-java/node40.html).
-First suppose $1 \leq i \leq x$. Let $[i,x]$ denote the intererval $\\{i,i+1,\ldots,x\\}$. 
+First suppose $1 \leq i < x$. Let $[i,x]$ denote the intererval $\\{i,i+1,\ldots,x\\}$. 
 A moment of thought will reveal that $I_i=1$ if and only if $i$ is the first element from $[i,x]$
 to be inserted. Each element from $[i,x]$ has an equal chance of $(x-i+1)^{-1}$ of being inserted first. So $P(I_i=1)=(x-i+1)^{-1}$.
-The same argument shows that if $x \leq i \leq n$ then 
+The similar argument shows that if $x < i \leq n$ then $P(I_i=1)=(i-x+1)^{-1}$. Hence
+
+$$
+P(I_i=1) =
+\begin{cases}
+        (x-i+1)^{-1} & \text{if } $1 \leq i < x$ \\
+        (i-x+1)^{-1} & \text{otherwise}
+\end{cases}
+$$
+
+Which imediately implies (as there are only two outcomes, $0$ and $1$) that for each $1 \leq i \leq n$,
+we have $E[I_i] = P(I_i=1)$. 
 
 Then we have a random variable $L_x$ which gives the length of the search path from the root to $x$, which is given by
 \\[
@@ -49,18 +61,10 @@ L_x(\sigma) = \sum\limits_{i \in \\{1,2,\ldots,n\\} \setminus \\{x\\}} I_i
 \\]
 
 By the linearity of expectations, we get
-\\[
-E[L_x] = \sum\limits_{i=1}^{x-1} E[I_i] + \sum\limits_{j=x+1}^n E[I_j]
-\\]
 
-Now we figure out what each of the summands is.
-
-First suppose $1 \leq i \leq x-1$. Then
-\\[
-E[I_i] = 0 \cdot P(I_i = 0) + 1 \cdot P(I_i = 1) = P(I_i = 1)
-\\]
-
-What is P(I_i = 1)? Well, look at the set $[i,x] = \\{i,i+1,\ldots,x\\}$. Under what conditions will $i$ be an ancestor of $x$? A moment of thought will tell us that $i$ is an ancestor of $x$ if and only if $i$ is the first element in $[i,x]$ to be inserted. Indeed, if $i$ is then the tree will look like this:
+$$
+	E[L_x] = \sum\limits_{i=1}^{x-1} E[I_i] + \sum\limits_{j=x+1}^n E[I_j]
+$$
 
 Because of the uniformity of our hash values, we can see that the expected depth of any given node is $O(\log n)$ and hence it takes an expected $O(n \log n)$ to insert all the words.
 
