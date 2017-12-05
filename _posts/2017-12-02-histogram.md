@@ -32,7 +32,7 @@ gives the same binary tree (in shape) as inserting some specific permutation of 
 ## Random Binary trees
 
 Suppose $S=\\{1,2,\ldots,n\\}$. For each permutation $\sigma$ of $S$ there is an $n$-tuple $S_\sigma = (\sigma(1), \sigma(2), \ldots, \sigma(n))$. There is also a corresponding binary tree $T_\sigma$, which is the binary tree formed by inserting all the entries in the order of $S_\sigma$. Clearly different permutations can correspond to the same binary tree.
-Our goal is to show that the expected depth of any tree is $O(\log n)$. We use [this paper](http://opendatastructures.org/versions/edition-0.1d/ods-java/node40.html)
+Our goal is to show that for any $x \in S$, its expected depth is $O(\log n)$. We use [this paper](http://opendatastructures.org/versions/edition-0.1d/ods-java/node40.html)
 as a reference
 
 Fix some $x \in S$. For each $i \in S \setminus \{x\}$, we can let $I_i$ be the random variable given by
