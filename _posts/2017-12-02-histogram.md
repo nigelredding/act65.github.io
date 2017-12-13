@@ -2,9 +2,8 @@
 layout: post
 title: Random binary trees and histograms
 ---
-NB: This is a draft.
-    See https://github.com/nigelredding/histogram for the code.
-    Should be completely finished by Dec 10.
+**NB**: This is a draft.
+    See [here](https://github.com/nigelredding/histogram) for the code.
 
 Suppose you have a book (with $n$ words total, not the unique count), and you want to make a histogram counting the frequencies of each word. If we allow a very small chance of failure, we can do this using $O(n)$ bits of memory and $O(n \log n)$ expected running time. We just use an ordinary binary tree. We explain why we don't need self-balancing techniques.
 
@@ -26,7 +25,7 @@ Then we've got our book in our tree. $O(n)$ bits of space were used. How long di
 
 For the sake of discussing memory and running time, we can assume the all the words are unique. Repetitions do not change the shape of the resulting tree,
 and multiple elements are only stored once. We can further assume that if there are $n$ unique words, then inserting the book (in its order)
-gives the same binary tree (in shape) as inserting some specific permutation of $\{1,2,\ldots,n\}$. We discuss this below. 
+gives the same binary tree (in shape) as inserting some specific permutation of $\{1,2,\ldots,n\}$. We discuss this below.
 
 
 ## Random Binary trees
@@ -48,7 +47,7 @@ $$
 What is the probability that $I_i=1$? In other words, what is the probability that
 $i$ is on the search path of $x$? We could use a counting argument (**todo: try this**), but instead we'll
 use a trick from [here](http://opendatastructures.org/versions/edition-0.1d/ods-java/node40.html).
-First suppose $1 \leq i < x$. Let $[i,x]$ denote the intererval $\\{i,i+1,\ldots,x\\}$. 
+First suppose $1 \leq i < x$. Let $[i,x]$ denote the intererval $\\{i,i+1,\ldots,x\\}$.
 A moment of thought will reveal that $I_i=1$ if and only if $i$ is the first element from $[i,x]$
 to be inserted. Each element from $[i,x]$ has an equal chance of $(x-i+1)^{-1}$ of being inserted first. So $P(I_i=1)=(x-i+1)^{-1}$.
 The similar argument shows that if $x < i \leq n$ then $P(I_i=1)=(i-x+1)^{-1}$. Hence
@@ -62,7 +61,7 @@ P(I_i=1) =
 $$
 
 Which imediately implies (as there are only two outcomes, $0$ and $1$) that for each $1 \leq i \leq n$,
-we have $E[I_i] = P(I_i=1)$. 
+we have $E[I_i] = P(I_i=1)$.
 
 Then we have a random variable $L_x$ which gives the length of the search path from the root to $x$, which is given by
 \\[
@@ -76,14 +75,14 @@ $$
 $$
 
 Recall that the sum $H_k := \sum_0^k i$ is called the $k$-th *Harmonic number*. By computing upper
-and lower Reimann sums of the integral $\int dx/x = \ln(x)$, we can show 
+and lower Reimann sums of the integral $\int dx/x = \ln(x)$, we can show
 that for any $k>0$, we have
 
 \\[
 	\ln k \leq H_k \leq \ln k + 1
 \\]
 
-Rewriting our sum, we get 
+Rewriting our sum, we get
 
 \\[
 	E[L_x] = H_x + H_{n-x+1}-2
@@ -96,7 +95,7 @@ So by our inequality
 \\]
 
 ## The program, again
-So we've shown that the inserting all words in a book has an expected running time of $O(n \log n)$. 
+So we've shown that the inserting all words in a book has an expected running time of $O(n \log n)$.
 So, if the data is uniformly distributed, we don't need any other techniques (like
 self-ballancing trees) to insert the data efficiently.
 
@@ -107,7 +106,7 @@ go run histogram.go leviathan.txt out.txt
 ```
 
 which gives us a histogram
-```bash 
+```bash
 the 15144
 of 10986
 hobbes 15

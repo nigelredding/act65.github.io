@@ -1,27 +1,10 @@
-\documentclass[12pt]{amsart}
-\usepackage{/home/nigel/Dropbox/mystyle}
+\documentclass{standalone}
 \usepackage{tikz}
 \usetikzlibrary{trees}
 \usetikzlibrary{automata, positioning}
 
 \begin{document}
-
-\iffalse
 \begin{tikzpicture}
-	\node[circle,draw](z){$z$}
-		child{node {$\ldots$}
-		      child{node {$i$}}
-		      child[missing] %child{node {rleft}}
-		}
-		child{node {right}
-		      child{node {lright}}
-		      child {node {rright}}
-		};
-\end{tikzpicture}
-\fi
-
-\begin{tikzpicture}
-
 % Add the states
 \node[state,
 		text=white,
@@ -40,5 +23,4 @@
 		(r) edge[bend right,auto=right] node {0.5} (s)
 		(r) edge[loop above] node {0.5} (r);
 \end{tikzpicture}
-
 \end{document}

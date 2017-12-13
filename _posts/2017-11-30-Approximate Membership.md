@@ -3,8 +3,10 @@ layout: post
 title: Approximate membership problem
 ---
 
-NB: This is a draft. The code is [here](https://github.com/nigelredding/fprint_dict) and [here](https://github.com/nigelredding/Bloom).
-Should be completely finished by Dec 10. 
+**NB**: This is a draft.
+
+The code is [here](https://github.com/nigelredding/fprint_dict) and [here](https://github.com/nigelredding/Bloom).
+Should be completely finished by Dec 10.
 
 In this post we discuss the *approximate membership problem*. That is, let $S = \\{s_1,\ldots,s_m\\}$ be a subset of some larger set $U$. Suppose
 $m$ is really big, e.g. $S$ is the set of words from an English dictionary. Let $x \in U$.
@@ -40,7 +42,7 @@ and that $h_1,\ldots,h_n$ are independent.\\
 
 To insert an element $x$ into $A$, we set
 \\[ A[h_1(x)] := 1, \ldots, A[h_k(x)] := 1. \\]
-In our Go code, this is implemented by the `Bloom.Insert`. 
+In our Go code, this is implemented by the `Bloom.Insert`.
 
 Typically, we begin by
 inserting all $s \in S$ into $A$. After this,
