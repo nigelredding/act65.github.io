@@ -1,0 +1,144 @@
+---
+layout: post
+title: Approximate membership problem
+---
+
+**NB**: This is a draft.
+
+The code is [here](https://github.com/nigelredding/fprint_dict) and [here](https://github.com/nigelredding/Bloom).
+
+In this post we discuss the *approximate membership problem*. That is, let $S = \\{s_1,\ldots,s_m\\}$ be a subset of some larger set $U$. Suppose
+$m$ is really big, e.g. $S$ is the set of words from an English dictionary. Let $x \in U$.
+We want to answer ``is $x \in S$?'' reasonably efficiently.
+
+&nbsp; &nbsp; &nbsp; &nbsp; Since $m$ is big, just linearly searching through $S$ is not a good solution. We look
+at three probabilistic soltuions. The basic idea is in all three is this: Let $N \geq 1$ and let $h: U \to \\{0,1\\}^N$
+be a hash function with its values *uniformly distributed* in $\\{0,1\\}^N$. We do not know anything
+about the distribution of values in $S$, but we now know that the values in $h(S)$ are uniformly distributed.
+We follow [§5.2,5.3 Mitzenmacher, Upfal](https://www.amazon.ca/Probability-Computing-Randomized-Algorithms-Probabilistic/dp/0521835402)
+and [this paper on Cuckoo Filters](https://www.cs.cmu.edu/~dga/papers/cuckoo-conext2014.pdf).
+
+## Fingerprint dictionary
+
+Let $S=\\{s_1,\ldots,s_m\\}$
+be a set of elements belonging to some larger set $U$. Let $h: U \to \\{0,1\\}^N$
+be a hash function, where $N$ is a chosen length. Let $b \leq N$ and let
+$h': U \to \{0,1\}$ be given by \\[ h'(x) = \text{ first b bits of } h(x). \\]
+We call $h'(x)$ the *fingerprint* of $x$. Let $T$ be a binary tree of the fingerprints
+of the elements of $S$. In order to check if a given $x \in U$ is in $S$, we simply
+search for $h'(x)$ in $T$. Since our fingerprints are uniformly distributed, we
+expect our tree to have roughly $\log_2 b$ levels, and hence we expect the search to
+take roughly $\log_2 b$ steps.
+
+## Bloom Filters
+
+Let $U$ be a set and let $S = \\{s_1,\ldots,s_m\\}$ be a finite subset.
+Let $A$ be an array of $n$ bits, with $A[0],\ldots,A[n-1]$ initially
+being $0$. Let $h_1,\ldots,h_k : U \to \{0,1,\ldots,n-1\}$ be $k$
+hash functions. We make the assumtion that the functions map
+each $x \in U$ to a random number uniformly in $\{0,1,\ldots,n\}$,
+and that $h_1,\ldots,h_n$ are independent.\\
+
+To insert an element $x$ into $A$, we set
+\\[ A[h_1(x)] := 1, \ldots, A[h_k(x)] := 1. \\]
+In our Go code, this is implemented by the `Bloom.Insert`.
+
+Typically, we begin by
+inserting all $s \in S$ into $A$. After this,
+there is the operation to check whether an element $x \in U$ (with some chance
+of a false positive) is a member of $S$. This is implemented by the ```Bloom.Lookup```.
+method.
+
+Both of these operations
+are clearly constant time operations.
+
+For given $m,n$ and $k$, we can compute the probability that
+check returns ```true```  for a given $x \in U \setminus S$.
+Indeed, for a given bit, the probability that that bit is still $0$
+after inserting all of $S$ into $A$ is \\[ \left ( 1 - \dfrac{1}{n} \right )^{km} . \\]
+Hence, the probability that a given bit is $1$ after insertion is
+\\[ 1 - \left ( 1 - \dfrac{1}{n} \right )^{km}. \\] Given that the hashes
+are $k$ bits long, the probability of getting a false positive
+is \\[ f =  \left ( 1 - \left ( 1 - \dfrac{1}{n} \right )^{km} \right )^k.\\]
+Given that $\lim_n (1 + \frac{x}{n})^n = e^x$, we see that
+\\[ \left ( 1 - \left ( 1 - \dfrac{1}{n} \right )^{km} \right )^k
+\approx (1 - e^{-km/n})^k. \\] Note that we made heavy use
+of the independece of $h_1,\ldots,h_k$. We set
+$g(k) := (1 - e^{-km/n})^k$. Using calculus, we see that
+$g$ has a global minimum at $k = \log(2) \cdot \frac{n}{m}$. At
+this specific $k$, the probability of getting a false positive
+is \\[ \left (\dfrac{1}{2} \right )^k \approx (0.6185)^{n/m}.\\] \\
+
+See [here](http://0pointer.net/blog/projects/bloom.html) for a short discussion
+on how to chose your $k$ hash functions.
+
+## Cuckoo Filters
+
+Bloom filters provide $O(1)$ ```Insert``` and $O(1)$ ```Lookup```, but they
+do not support deletion. We describe another data structure, which provides
+(amortized) $O(1)$ ```Insert```, ```Lookup``` and ```Delete```. We
+follow \href{https://www.cs.cmu.edu/~dga/papers/cuckoo-conext2014.pdf}{this paper}.
+A Cuckoo Filter $F$ consists of an array of $m$ buckets, where each bucket holds
+$b$ \emph{fingerprints} (explained later) of length $f$ bits. We insert $n$ items into $F$.
+$F$ is equipped with a hash function $h$ which maps $U$ into $\{0,1,\ldots,m\}$.\\
+
+We go through the implementation of the operations ```Insert,Lookup``` and ```Delete```.\\
+
+For each item $x \in U$, there is a hash $h(x)$ (let's say it's a 32 bit integer)
+and a fingerprint, which is assigned to be the lowest $f$ bytes of $h(x)$ \footnote{In my
+implementation, we take $f=8$ (constant), which makes it impossible to implement a good
+Cuckoo Filter in many cases. This will be fixed later.} To insert $x$ into $F$, we insert
+its fingerprint $f(x)$. We do this as follows.\\
+
+```Insert(x)``` returns ```true``` if $x$ was inserted correctly, and ```false```.
+otherwise.
+
+```python
+Insert(x) {
+	index1 := h(x)
+	fprint := first p bits of h(x)
+	index2 := index1 ^ h(fprint)
+
+	if buckets[index1] not full {
+		add fprint to buckets[index1]
+		return true
+	}
+	if buckets[index2] not full {
+		add fprint to buckets[index2]
+		return true
+	}
+
+	i := chose index1 or index2 randomly
+	for n := 0; n < maxKicks; n++ {
+		swap fprint with a random entry in buckets[i]
+		fph := h(fprint)
+		index = index ^ fph
+		if buckets[index] not full {
+			add fprint to buckets[index]
+			return true
+		}
+	}
+}
+```
+
+Let's step through this line by line.
+
+* When we insert $x$, there are two locations in can be
+placed in, ```index1 = h(x)``` or its alternate location
+```index2 = index1 XOR h(fprint)}```. We can recover ```index1``` from
+```index2``` by ```index1 = index2 XOR \textasciitilde h(fprint)```
+
+* Following this, we attempt to add into the bucket at index1 and index2. If either
+succeed, we return true.
+
+* If neither suceeed, we pick index1 or index2 at random, and assign it to
+i. Then, for a certain number of steps (```maxKicks = 500``` in our reference)
+we do the following.
+
+* Swap our fingerprint fprint with a random entry in ```bucket[i]```. Find
+its alternate location, and try to put it in there. If you fail, repeat with another
+fingerprint in ```buckets[i]```. Repeat this step until we either return ```true```
+or we go through ```maxKicks``` steps.
+
+The ```Lookup``` and ```Delete``` operations are short and easy to understand, so
+I refer the reader to page 5 of [this paper](https://www.cs.cmu.edu/~dga/papers/cuckoo-conext2014.pdf).
