@@ -4,13 +4,4 @@ title: About
 permalink: /about/
 ---
 
-I recently graduated from the University of Ottawa with an MSc. in math. I'm looking for work in software development. I have some experience with the following technologies:
-
-* Python
-* Go
-* C
-* Scheme
-* Linux (bash)
-* C++
-* Java
-* Git
+I'm interested in math and computers.
