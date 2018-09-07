@@ -72,5 +72,5 @@ defaults:
     values:
       category: "main"
 
-plugins:
+plugins_dir:
   - jekyll-gist
