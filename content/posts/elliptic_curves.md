@@ -1,0 +1,84 @@
+---
+title: "Introduction to Elliptic curves"
+date: 2021-06-06T00:07:49-04:00
+draft: true
+toc: false
+math: true
+images:
+tags: 
+  - Math
+  - Elliptic Curves
+  - Cryptography
+---
+
+This post is the first post in a two part series on Elliptic Curves. In this post,
+I\'ll lay out the background on the subject. We won\'t discuss any applications, but merely
+give the reader a basic idea of how much structure there is in this subject: from algebra,
+to geometry, to number theory and even analysis.
+
+## Motivation
+
+The reader may already be familiar with the definition of an elliptic curve as a
+curve defined by the equation $$ y^2 = x^3 + ax + b $$ for coefficients in some field
+\\( F \\), and where the discriminant \\( \Delta = 4a^3 + 27b^2 \neq 0 \\). This is a very myterious definition.
+Some obvious questions:
+
+Q1. Why are we concerened with degree 3 curves, let alone degree 3 curves of this particular form?
+
+Q2. What is the significance of \\( \Delta \\) being nonzero?
+
+Q3. Is there a more general theory in the background?
+
+By the end of this post, I hope to have at least partially answered these questions. This is a large area of mathematics,
+and one I know relatively little about, but I hope to give the reader the intuition that there is
+an incredibly rich interplay between algebra, geometry and number theory.
+
+### Linear case
+
+Let\'s start by discussing the linear case in two variables, i.e. the problem of finding integral solutions
+to equations of the form $$ ax + by = c $$ for fixed integers \\( a,b,c  \\).
+Denote \\( d := \gcd(a,b) \\). If \\( d \\) does not divide \\( c \\), then there is no integral solution. So assume
+\\( d \\) does indeed divide \\( c \\). 
+
+Another way of looking at this is to consider the ring homomorphism \\( \mathbb{Z} \to \mathbb{Z} \\) 
+given by mapping each integer to its remainder when divided by \\( n \\). The ring \\( \mathbb{Z}/n\mathbb{Z} \\)
+
+
+### Quadratic forms (homogeneous quadratic case)
+
+Advanced from the linear case is the quadratic case in two variables. A _quadratic form_ is a polynomial
+of the form $$ ax^2 + bxy + cy^2 $$ where \\( a,b,c \\). One of the fundamental problems in the theory of
+Quadratic forms is to find the set of integers represented by a given quadratic form. I admit this is a subject
+I know very little about. I am planning on making time to go over https://dms.umontreal.ca/~andrew/Courses/Chapter4.pdf.
+
+## Elliptic Curves (non-degenerate cubic case)
+
+The most general setting (without getting totally crazy) is the setting of _algebraic varieties_, which are
+solution sets to simultaneous polynomials. But from just looking at examples of elliptic curves, and
+the structure that falls out, we see that we already have plenty on our plate to understand without
+getting too abstract.
+
+Let\'s answer Q2 above: What is the meaning of \\( \Delta \neq 0 \\) in our definition?
+The _discriminant_ for a polynomial \\( p(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_0 \\)
+with roots \\( r_0, \cdots, r_{n-1} \\) is defined as $$ \Delta := a_n^{2n-2} \prod\limits_{i \neq j} (r_i - r_j) $$
+The reader can verify that for a quadratic \\( ax^2 + bx + c = 0 \\), the discriminant is indeed
+\\( \Delta = b^2 - 4ac \\). When \\( \Delta = 0 \\), we have a multiple root. Why do we care if our
+curve has a multiple root? We need to learn a bit of algebraic geometry to answer that.
+
+### A little bit of algebraic geometry
+
+Consider a curve  \\( C/F \\) defined by \\( f \in F[x_1,\ldots,x_n] \\). A singularity is a point
+\\( P \in F^n \\) such that \\( f(P) = 0 \\). We say \\( C \\) is smooth if it has no singularities.
+It\'s not hard to see that \\( C \\) is smooth _iff_ \\( \Delta \neq 0 \\).
+
+[EXAMPLES AND TYPES OF SINGULARITIES]
+
+We will abuse notation a bit and think of \\( F[x_1,\ldots,x_n] \\) as a ring of
+functions \\( F^n \to F \\), not just polynomial expressions in \\( F \\). Define
+\\( F[C] \\) to be the ring of functions in \\( F[x_1,\ldots,x_n] \\) restricted to \\( C \\).
+
+A very nitpicky point about our choice of notation. If we wanted to be really formal, we could say
+that we are working in "Affine Space" \\( \mathbb{A}^n \\), which is basically just \\( F^n \\),
+but with some extra mathematical structure. I\'ll avoid this formalism and try to keep it down to
+earth.
+
