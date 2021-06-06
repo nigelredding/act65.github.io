@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nigel Redding</title>
-    <link>http://nigelredding.github.io/</link>
-    <description>Recent content on Nigel Redding</description>
+    <title>Elliptic Curves on Nigel Redding</title>
+    <link>http://nigelredding.github.io/tags/elliptic-curves/</link>
+    <description>Recent content in Elliptic Curves on Nigel Redding</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Jun 2021 00:07:49 -0400</lastBuildDate>
     
-	<atom:link href="http://nigelredding.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://nigelredding.github.io/tags/elliptic-curves/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -67,43 +67,6 @@ functions \( F^n \to F \), not just polynomial expressions in \( F \). Define
 that we are working in &amp;ldquo;Affine Space&amp;rdquo; \( \mathbb{A}^n \), which is basically just \( F^n \),
 but with some extra mathematical structure. I&#39;ll avoid this formalism and try to keep it down to
 earth.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Whirlwind Computer Science Review</title>
-      <link>http://nigelredding.github.io/posts/cs_review/</link>
-      <pubDate>Sun, 06 Jun 2021 00:07:49 -0400</pubDate>
-      
-      <guid>http://nigelredding.github.io/posts/cs_review/</guid>
-      <description>&lt;p&gt;During my life, I&#39;ve learned quite a bit about computer science merely
-from having a basic background in pure mathematics. In this post, I&#39;ll try
-to give fairly consise but rigorous overview of what I know of the area. This post
-won&#39;t help anyone learn these topics for the first time, but they may be of value
-to people wanting a refresher.&lt;/p&gt;
-&lt;h1 id=&#34;basics-of-computation-and-languages&#34;&gt;Basics of Computation and Languages&lt;/h1&gt;
-&lt;p&gt;For a set \( S \), we define its &lt;em&gt;Kleene Star&lt;/em&gt; to be the set \( S^\ast \) of all strings in  \( S \). This includes
-the empty string \( \varepsilon \). For an alphabet \( \Sigma \) we define a &lt;em&gt;language&lt;/em&gt; \( L \) to be a subset of
-\( \Sigma^\ast \). The goal is to find an effective procedure which decides if a given string \( s \in \Sigma^\ast \)
-is also in our language.&lt;/p&gt;
-&lt;h2 id=&#34;compilers&#34;&gt;Compilers&lt;/h2&gt;
-&lt;h1 id=&#34;incompleteness-and-the-halting-problem&#34;&gt;Incompleteness and the halting problem&lt;/h1&gt;
-&lt;h1 id=&#34;curry-howard-correspondence&#34;&gt;Curry-Howard Correspondence&lt;/h1&gt;
-&lt;h1 id=&#34;category-theory&#34;&gt;Category Theory&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Whirlwind review of Multivariable Calculus</title>
-      <link>http://nigelredding.github.io/posts/calculus/</link>
-      <pubDate>Sun, 06 Jun 2021 00:07:49 -0400</pubDate>
-      
-      <guid>http://nigelredding.github.io/posts/calculus/</guid>
-      <description>&lt;p&gt;This is a quick tour of Spivak&#39;s &lt;em&gt;Calculus on Manifolds&lt;/em&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;functions-of-several-real-variables&#34;&gt;Functions of several real variables&lt;/h2&gt;
-&lt;h2 id=&#34;differentiation&#34;&gt;Differentiation&lt;/h2&gt;
-&lt;h2 id=&#34;integration&#34;&gt;Integration&lt;/h2&gt;
-&lt;h2 id=&#34;hallmark-theorems&#34;&gt;Hallmark Theorems&lt;/h2&gt;
 </description>
     </item>
     

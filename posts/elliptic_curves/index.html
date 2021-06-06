@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Nigel Redding  | Introduction to Elliptic curves</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1">
+	<meta name="generator" content="Hugo 0.68.3" />
+	
+	
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	
+
+	
+	
+	<link href="/dist/app.css" rel="stylesheet">
+	
+
+	
+
+	
+	
+	
+
+	
+	
+	
+	
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
+    integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"
+    integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp"
+    crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"
+    integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+	
+	
+	
+	<script>
+		(function (u, c) {
+			var d = document,
+				t = 'script',
+				o = d.createElement(t),
+				s = d.getElementsByTagName(t)[0];
+			o.src = u;
+			if (c) {
+				o.addEventListener('load', function (e) {
+					c(e);
+				});
+			}
+			s.parentNode.insertBefore(o, s);
+		})('http:\/\/nigelredding.github.io\/lib\/pangu.min.js', function () {
+			pangu.spacingPage();
+		});
+	</script>
+	
+	
+	
+</head>
+
+<body class="bg-gray-100 text-gray-700 font-sans">
+	<div class="p-6 sm:p-10 md:p-16 flex flex-wrap">
+		<header class="w-full md:w-2/5 xl:w-1/2 md:pr-12 lg:pr-20 xl:pr-24 order-1 md:order-1 max-w-2xl">
+			<div
+				class="z-50 bg-gray-100 bg-opacity-75 bg-opacity-custom lg:min-w-0.7 max-w-xl md:float-right md:text-right leading-loose tracking-tight md:sticky md:top-0 pt-2">
+				
+<div>
+	<h2>
+		<a href="http://nigelredding.github.io/" title="Nigel Redding" class="heading font-cursive icon">Nigel Redding</a>
+	</h2>
+</div>
+<h2 class="pt-2">Introduction to Elliptic curves</h2>
+
+<div class="flex flex-wrap justify-end pt-2 "><div class="md:flex-grow-0 font-light">
+	
+
+	
+
+	
+	
+	
+	
+	<a class="post-taxonomy-tag text-eucalyptus-500"
+		href='/tags/math'>Math</a>&nbsp;&#47;
+	
+	<a class="post-taxonomy-tag text-eucalyptus-500"
+		href='/tags/elliptic-curves'>Elliptic Curves</a>&nbsp;&#47;
+	
+	<a class="post-taxonomy-tag text-eucalyptus-500"
+		href='/tags/cryptography'>Cryptography</a>
+	
+	
+	
+</div><time class="text-eucalyptus-500 md:text-right md:flex-grow font-light pl-4"
+		datetime="2021-06-06T00:07:49-04:00">2021-6-6 00:07</time>
+</div>
+
+<hr />
+
+
+			</div>
+		</header>
+		<main role="main" class="w-full md:w-3/5 xl:w-1/2 max-w-3xl order-2 md:order-2 min-h-70vh pt-2 pb-4">
+			
+
+<article>
+	<section class="mx-auto content">
+		<div class="c-rich-text"><p>This post is the first post in a two part series on Elliptic Curves. In this post,
+I'll lay out the background on the subject. We won't discuss any applications, but merely
+give the reader a basic idea of how much structure there is in this subject: from algebra,
+to geometry, to number theory and even analysis.</p>
+<h2 id="motivation">Motivation</h2>
+<p>The reader may already be familiar with the definition of an elliptic curve as a
+curve defined by the equation $$ y^2 = x^3 + ax + b $$ for coefficients in some field
+\( F \), and where the discriminant \( \Delta = 4a^3 + 27b^2 \neq 0 \). This is a very myterious definition.
+Some obvious questions:</p>
+<p>Q1. Why are we concerened with degree 3 curves, let alone degree 3 curves of this particular form?</p>
+<p>Q2. What is the significance of \( \Delta \) being nonzero?</p>
+<p>Q3. Is there a more general theory in the background?</p>
+<p>By the end of this post, I hope to have at least partially answered these questions. This is a large area of mathematics,
+and one I know relatively little about, but I hope to give the reader the intuition that there is
+an incredibly rich interplay between algebra, geometry and number theory.</p>
+<h3 id="linear-case">Linear case</h3>
+<p>Let's start by discussing the linear case in two variables, i.e. the problem of finding integral solutions
+to equations of the form $$ ax + by = c $$ for fixed integers \( a,b,c  \).
+Denote \( d := \gcd(a,b) \). If \( d \) does not divide \( c \), then there is no integral solution. So assume
+\( d \) does indeed divide \( c \).</p>
+<p>Another way of looking at this is to consider the ring homomorphism \( \mathbb{Z} \to \mathbb{Z} \)
+given by mapping each integer to its remainder when divided by \( n \). The ring \( \mathbb{Z}/n\mathbb{Z} \)</p>
+<h3 id="quadratic-forms-homogeneous-quadratic-case">Quadratic forms (homogeneous quadratic case)</h3>
+<p>Advanced from the linear case is the quadratic case in two variables. A <em>quadratic form</em> is a polynomial
+of the form $$ ax^2 + bxy + cy^2 $$ where \( a,b,c \). One of the fundamental problems in the theory of
+Quadratic forms is to find the set of integers represented by a given quadratic form. I admit this is a subject
+I know very little about. I am planning on making time to go over <a href="https://dms.umontreal.ca/~andrew/Courses/Chapter4.pdf">https://dms.umontreal.ca/~andrew/Courses/Chapter4.pdf</a>.</p>
+<h2 id="elliptic-curves-non-degenerate-cubic-case">Elliptic Curves (non-degenerate cubic case)</h2>
+<p>The most general setting (without getting totally crazy) is the setting of <em>algebraic varieties</em>, which are
+solution sets to simultaneous polynomials. But from just looking at examples of elliptic curves, and
+the structure that falls out, we see that we already have plenty on our plate to understand without
+getting too abstract.</p>
+<p>Let's answer Q2 above: What is the meaning of \( \Delta \neq 0 \) in our definition?
+The <em>discriminant</em> for a polynomial \( p(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_0 \)
+with roots \( r_0, \cdots, r_{n-1} \) is defined as $$ \Delta := a_n^{2n-2} \prod\limits_{i \neq j} (r_i - r_j) $$
+The reader can verify that for a quadratic \( ax^2 + bx + c = 0 \), the discriminant is indeed
+\( \Delta = b^2 - 4ac \). When \( \Delta = 0 \), we have a multiple root. Why do we care if our
+curve has a multiple root? We need to learn a bit of algebraic geometry to answer that.</p>
+<h3 id="a-little-bit-of-algebraic-geometry">A little bit of algebraic geometry</h3>
+<p>Consider a curve  \( C/F \) defined by \( f \in F[x_1,\ldots,x_n] \). A singularity is a point
+\( P \in F^n \) such that \( f(P) = 0 \). We say \( C \) is smooth if it has no singularities.
+It's not hard to see that \( C \) is smooth <em>iff</em> \( \Delta \neq 0 \).</p>
+<p>[EXAMPLES AND TYPES OF SINGULARITIES]</p>
+<p>We will abuse notation a bit and think of \( F[x_1,\ldots,x_n] \) as a ring of
+functions \( F^n \to F \), not just polynomial expressions in \( F \). Define
+\( F[C] \) to be the ring of functions in \( F[x_1,\ldots,x_n] \) restricted to \( C \).</p>
+<p>A very nitpicky point about our choice of notation. If we wanted to be really formal, we could say
+that we are working in &ldquo;Affine Space&rdquo; \( \mathbb{A}^n \), which is basically just \( F^n \),
+but with some extra mathematical structure. I'll avoid this formalism and try to keep it down to
+earth.</p>
+</div>
+	</section>
+
+
+</article>
+
+		</main>
+		<div class="w-full h-0 flex-none order-3"></div>
+		<aside role="contentinfo"
+			class="w-full md:w-2/5 xl:w-1/2 md:pr-12 lg:pr-20 xl:pr-24 order-4 md:order-3 md:sticky md:bottom-0 self-end max-w-2xl">
+			<div class="md:float-right md:text-right leading-loose tracking-tight md:mb-2">
+				
+	<div class="md:max-w-xs  flex flex-col md:items-end">
+	<ul class="font-serif flex-grow-0 flex justify-between flex-wrap md:flex-col">
+	
+	
+</ul>
+	
+
+<div class="flex flex-wrap-reverse md:justify-end content-end md:content-start justify-start items-start   max-h-16">
+	
+</div>
+	<div class="text-sm text-gray-500 leading-tight a-gray">
+		
+		<br />
+		Built with Hugo and theme <a href="https://github.com/heyeshuang/hugo-theme-tokiwa">Tokiwa</a>. 744 words in this page.
+	</div>
+</div>
+
+			</div>
+		</aside>
+		<footer class="w-full md:w-3/5 xl:w-1/2 order-3 max-w-3xl md:order-4 pt-2">
+			
+<hr class="double-line" />
+<div class="flex flex-wrap justify-between pb-2 leading-loose font-serif">
+    
+    <a class="flex-grow-0" href="/posts/cs_review/">
+        <svg class="fill-current inline-block h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+            height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z" /></svg>
+        Whirlwind Computer Science Review
+    </a>
+    
+    
+</div>
+<div >
+
+
+
+<div class="font-serif pb-2 flex align-start leading-loose">
+	<span class="heading pr-6 leading-loose">Related</span>
+	<span >
+		
+			<a href="/posts/calculus/">Whirlwind review of Multivariable Calculus</a>
+		
+</span>
+</div>
+
+</div>
+<hr />
+<div class="pb-2">
+    
+</div>
+<hr />
+
+		</footer>
+		
+
+<script src="/dist/app.js"></script>
+
+
+	</div>
+</body>
+
+</html>
