@@ -1,5 +1,0 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "Nigel Redding"
-theme = "tokiwa"
-math = true
