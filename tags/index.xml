@@ -6,46 +6,9 @@
     <description>Recent content in Tags on Nigel Redding</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Jun 2021 00:07:49 -0400</lastBuildDate>
     
 	<atom:link href="http://nigelredding.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Computer Science</title>
-      <link>http://nigelredding.github.io/tags/computer-science/</link>
-      <pubDate>Sun, 06 Jun 2021 00:07:49 -0400</pubDate>
-      
-      <guid>http://nigelredding.github.io/tags/computer-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cryptography</title>
-      <link>http://nigelredding.github.io/tags/cryptography/</link>
-      <pubDate>Sun, 06 Jun 2021 00:07:49 -0400</pubDate>
-      
-      <guid>http://nigelredding.github.io/tags/cryptography/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Elliptic Curves</title>
-      <link>http://nigelredding.github.io/tags/elliptic-curves/</link>
-      <pubDate>Sun, 06 Jun 2021 00:07:49 -0400</pubDate>
-      
-      <guid>http://nigelredding.github.io/tags/elliptic-curves/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Math</title>
-      <link>http://nigelredding.github.io/tags/math/</link>
-      <pubDate>Sun, 06 Jun 2021 00:07:49 -0400</pubDate>
-      
-      <guid>http://nigelredding.github.io/tags/math/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
