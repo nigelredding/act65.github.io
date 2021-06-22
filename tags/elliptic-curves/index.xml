@@ -38,12 +38,13 @@ to equations of the form $$ ax + by = c $$ for fixed integers \( a,b,c  \).
 Denote \( d := \gcd(a,b) \). If \( d \) does not divide \( c \), then there is no integral solution. So assume
 \( d \) does indeed divide \( c \).&lt;/p&gt;
 &lt;p&gt;Another way of looking at this is to consider the ring homomorphism \( \mathbb{Z} \to \mathbb{Z} \)
-given by mapping each integer to its remainder when divided by \( n \). The ring \( \mathbb{Z}/n\mathbb{Z} \)&lt;/p&gt;
+given by mapping each integer to its remainder when divided by \( n \). [EXPAND]&lt;/p&gt;
 &lt;h3 id=&#34;quadratic-forms-homogeneous-quadratic-case&#34;&gt;Quadratic forms (homogeneous quadratic case)&lt;/h3&gt;
 &lt;p&gt;Advanced from the linear case is the quadratic case in two variables. A &lt;em&gt;quadratic form&lt;/em&gt; is a polynomial
 of the form $$ ax^2 + bxy + cy^2 $$ where \( a,b,c \). One of the fundamental problems in the theory of
 Quadratic forms is to find the set of integers represented by a given quadratic form. I admit this is a subject
-I know very little about. I am planning on making time to go over &lt;a href=&#34;https://dms.umontreal.ca/~andrew/Courses/Chapter4.pdf&#34;&gt;https://dms.umontreal.ca/~andrew/Courses/Chapter4.pdf&lt;/a&gt;.&lt;/p&gt;
+I know very little about. I am planning on making time to go over &lt;a href=&#34;https://dms.umontreal.ca/~andrew/Courses/Chapter4.pdf&#34;&gt;https://dms.umontreal.ca/~andrew/Courses/Chapter4.pdf&lt;/a&gt;.
+[Another post?]&lt;/p&gt;
 &lt;h2 id=&#34;elliptic-curves-non-degenerate-cubic-case&#34;&gt;Elliptic Curves (non-degenerate cubic case)&lt;/h2&gt;
 &lt;p&gt;The most general setting (without getting totally crazy) is the setting of &lt;em&gt;algebraic varieties&lt;/em&gt;, which are
 solution sets to simultaneous polynomials. But from just looking at examples of elliptic curves, and
@@ -57,7 +58,7 @@ The reader can verify that for a quadratic \( ax^2 + bx + c = 0 \), the discrimi
 curve has a multiple root? We need to learn a bit of algebraic geometry to answer that.&lt;/p&gt;
 &lt;h3 id=&#34;a-little-bit-of-algebraic-geometry&#34;&gt;A little bit of algebraic geometry&lt;/h3&gt;
 &lt;p&gt;Consider a curve  \( C/F \) defined by \( f \in F[x_1,\ldots,x_n] \). A singularity is a point
-\( P \in F^n \) such that \( f(P) = 0 \). We say \( C \) is smooth if it has no singularities.
+\( P \in F^n \) such that \( f&amp;rsquo;(P) = 0 \). We say \( C \) is smooth if it has no singularities.
 It&#39;s not hard to see that \( C \) is smooth &lt;em&gt;iff&lt;/em&gt; \( \Delta \neq 0 \).&lt;/p&gt;
 &lt;p&gt;[EXAMPLES AND TYPES OF SINGULARITIES]&lt;/p&gt;
 &lt;p&gt;We will abuse notation a bit and think of \( F[x_1,\ldots,x_n] \) as a ring of
